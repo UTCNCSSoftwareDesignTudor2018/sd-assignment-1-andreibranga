@@ -1,5 +1,7 @@
 package BussinessLogicLayer.Models;
 
+import DataAccessLayer.DAO.AppRolesDAO;
+
 import java.util.Objects;
 
 public class AppUserRolesModel {
@@ -44,7 +46,7 @@ public class AppUserRolesModel {
     }
 
     public AppRolesModel getAppRolesByRoleId() {
-        return appRolesByRoleId;
+        return AppRolesDAO.findById(this.roleId);
     }
 
     public void setAppRolesByRoleId(AppRolesModel appRolesByRoleId) {

@@ -1,5 +1,7 @@
 package BussinessLogicLayer.Models;
 
+import DataAccessLayer.DAO.GroupDAO;
+
 import java.util.Objects;
 
 public class StudentEnrollmentModel {
@@ -44,7 +46,7 @@ public class StudentEnrollmentModel {
     }
 
     public GroupModel getGroupByGroupId() {
-        return groupByGroupId;
+        return GroupDAO.findById(groupId);
     }
 
     public void setGroupByGroupId(GroupModel groupByGroupId) {

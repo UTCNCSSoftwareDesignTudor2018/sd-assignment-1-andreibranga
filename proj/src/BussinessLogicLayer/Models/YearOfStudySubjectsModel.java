@@ -1,5 +1,8 @@
 package BussinessLogicLayer.Models;
 
+import DataAccessLayer.DAO.SubjectsDAO;
+import DataAccessLayer.DAO.YearOfStudyDAO;
+
 import java.util.Objects;
 
 public class YearOfStudySubjectsModel {
@@ -52,7 +55,7 @@ public class YearOfStudySubjectsModel {
     }
 
     public SubjectsModel getSubjectsBySubjectId() {
-        return subjectsBySubjectId;
+        return SubjectsDAO.findById(subjectId);
     }
 
     public void setSubjectsBySubjectId(SubjectsModel subjectsBySubjectId) {
@@ -60,7 +63,7 @@ public class YearOfStudySubjectsModel {
     }
 
     public YearOfStudyModel getYearOfStudyByYearOfStudyId() {
-        return yearOfStudyByYearOfStudyId;
+        return YearOfStudyDAO.findById(yearOfStudyId);
     }
 
     public void setYearOfStudyByYearOfStudyId(YearOfStudyModel yearOfStudyByYearOfStudyId) {

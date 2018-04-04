@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PresentationLayer.Controllers.MainController">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="700.0" prefWidth="800.0">
+         <children>
+            <Text layoutX="75.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your profile: " wrappingWidth="144.21875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="16.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="118.21875" />
+            <Text layoutX="16.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mid name:" wrappingWidth="118.21875" />
+            <Text layoutX="16.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surname:" wrappingWidth="118.21875" />
+            <Text layoutX="16.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone:" wrappingWidth="118.21875" />
+            <Text layoutX="14.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ZIP:" wrappingWidth="118.21875" />
+            <Text layoutX="16.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nationality:" wrappingWidth="118.21875" />
+            <Text layoutX="16.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" wrappingWidth="118.21875" />
+            <Text layoutX="16.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country:" wrappingWidth="118.21875" />
+            <Text layoutX="14.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="County:" wrappingWidth="118.21875" />
+            <TextField fx:id="nameText" disable="true" layoutX="136.0" layoutY="143.0" />
+            <TextField fx:id="midnameText" disable="true" layoutX="136.0" layoutY="185.0" />
+            <TextField fx:id="surnameText" disable="true" layoutX="136.0" layoutY="230.0" />
+            <TextField fx:id="phoneText" disable="true" layoutX="136.0" layoutY="273.0" />
+            <TextField fx:id="nationalityText" disable="true" layoutX="136.0" layoutY="320.0" />
+            <TextField fx:id="CountryText" disable="true" layoutX="136.0" layoutY="365.0" />
+            <TextField fx:id="CountyText" disable="true" layoutX="136.0" layoutY="410.0" />
+            <TextField fx:id="addressText" disable="true" layoutX="136.0" layoutY="456.0" />
+            <TextField fx:id="zipText" disable="true" layoutX="136.0" layoutY="504.0" />
+            <TextField fx:id="emailText" disable="true" layoutX="136.0" layoutY="553.0" />
+            <Text layoutX="14.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="118.21875" />
+            <TextField fx:id="welcomeText" disable="true" editable="false" layoutX="226.0" layoutY="30.0" prefHeight="45.0" prefWidth="343.0">
+               <font>
+                  <Font size="24.0" />
+               </font></TextField>
+            <Button fx:id="editButton" layoutX="58.0" layoutY="616.0" mnemonicParsing="false" onAction="#onEdit" prefHeight="32.0" prefWidth="83.0" text="EDIT" />
+            <Button fx:id="saveButton" disable="true" layoutX="170.0" layoutY="616.0" mnemonicParsing="false" onAction="#onSave" prefHeight="32.0" prefWidth="83.0" text="SAVE" />
+            <TableView fx:id="studentTable" layoutX="431.0" layoutY="168.0" prefHeight="357.0" prefWidth="309.0" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>

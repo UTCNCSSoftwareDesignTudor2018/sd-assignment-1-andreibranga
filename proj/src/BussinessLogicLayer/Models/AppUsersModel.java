@@ -1,5 +1,9 @@
 package BussinessLogicLayer.Models;
 
+import DataAccessLayer.DAO.AppUserRolesDao;
+import DataAccessLayer.DAO.UserProfileDAO;
+
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class AppUsersModel {
@@ -7,12 +11,36 @@ public class AppUsersModel {
     private String userName;
     private String passwordHash;
     private String email;
-
+    private UserProfileModel userProfile;
     public AppUsersModel(String userId, String userName, String passwordHash, String email) {
         this.userId = userId;
         this.userName = userName;
         this.passwordHash = passwordHash;
         this.email = email;
+    }
+
+    public UserProfileModel getUserProfile() {
+        return UserProfileDAO.findById(userId);
+    }
+
+    public boolean IsInRole(String roleName)
+    {
+        ArrayList<AppUserRolesModel> roles= AppUserRolesDao.GetAllRolesForUser(userId);
+
+        for (AppUserRolesModel item:roles
+             ) {
+            if(item.getAppRolesByRoleId().getRoleName().equals(roleName))
+            {
+                return true;
+            }
+
+
+        }
+        return false;
+    }
+
+    public void setUserProfile(UserProfileModel userProfile) {
+        this.userProfile = userProfile;
     }
 
     public String getUserId() {

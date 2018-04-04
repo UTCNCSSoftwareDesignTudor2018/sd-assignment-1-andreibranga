@@ -1,21 +1,45 @@
 package BussinessLogicLayer.Models;
 
+import DataAccessLayer.DAO.AppUsersDAO;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+
 import java.util.Objects;
 
 public class StudentsModel {
     private String userId;
-    private int studentId;
+    private SimpleIntegerProperty studentId;
+    private AppUsersModel usersModel;
+    private SimpleStringProperty StudentName=new SimpleStringProperty("blank");
 
-    public StudentsModel(String userId, int studentId) {
+    public String getStudentName() {
+        return getUsersModel().getUserProfile().getName()+" "
+                +getUsersModel().getUserProfile().getMidName()+" "
+                +getUsersModel().getUserProfile().getSurname();
+    }
+
+    public void setStudentName(SimpleStringProperty studentName) {
+        StudentName = studentName;
+    }
+
+    public AppUsersModel getUsersModel() {
+        return AppUsersDAO.findById(userId);
+    }
+
+    public void setUsersModel(AppUsersModel usersModel) {
+        this.usersModel = usersModel;
+    }
+
+    public StudentsModel(String userId, SimpleIntegerProperty studentId) {
         this.userId = userId;
         this.studentId = studentId;
     }
 
-    public int getStudentId() {
+    public SimpleIntegerProperty getStudentId() {
         return studentId;
     }
 
-    public void setStudentId(int studentId) {
+    public void setStudentId(SimpleIntegerProperty studentId) {
         this.studentId = studentId;
     }
 

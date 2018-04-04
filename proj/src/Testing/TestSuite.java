@@ -3,13 +3,14 @@ package Testing;
 import BussinessLogicLayer.Models.AppRolesModel;
 import BussinessLogicLayer.Models.AppUserRolesModel;
 import BussinessLogicLayer.Models.AppUsersModel;
+import BussinessLogicLayer.Models.StudentsModel;
+import BussinessLogicLayer.Services.StudentService;
 import DataAccessLayer.Connection.ConnectionFactory;
 import DataAccessLayer.DAO.AppRolesDAO;
 import DataAccessLayer.DAO.AppUserRolesDao;
 import DataAccessLayer.DAO.AppUsersDAO;
 import org.junit.jupiter.api.Test;
 
-import java.io.Console;
 import java.sql.Connection;
 import java.util.ArrayList;
 
@@ -64,7 +65,7 @@ public class TestSuite {
     @Test
     public void testAddUser()
     {
-        AppUsersDAO.insert("abranga","qwerty123","abranga96@gmail.com");
+        AppUsersDAO.insert("craciunsergiu","qwerty123","craciunsergiu@gmail.com");
 
     }
 
@@ -99,6 +100,26 @@ public class TestSuite {
         for (AppUserRolesModel item:roles
              ) {
             System.out.println(item.getRoleId()+" "+item.getUserId());
+        }
+    }
+
+    @Test
+    public void AuxiliaryTests()
+    {
+        System.out.println(getClass().getResource("resources/Views/MainPage.fxml"));
+    }
+
+
+
+    @Test
+    public void getAllStudents()
+    {
+        ArrayList<StudentsModel>  studs= StudentService.GetAllStudents();
+
+        for (StudentsModel s:studs
+             ) {
+            System.out.println(s.getUserId()+ " "+ s.getUserId()+ " "+s.getStudentName());
+
         }
     }
 }

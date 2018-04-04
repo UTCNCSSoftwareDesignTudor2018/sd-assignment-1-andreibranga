@@ -2,6 +2,8 @@ package DataAccessLayer.DAO;
 
 import BussinessLogicLayer.Models.StudentsModel;
 import DataAccessLayer.Connection.ConnectionFactory;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -31,7 +33,7 @@ public class StudentsDao {
             ResultSet rs = updateStatement.getResultSet();
             while(rs.next())
             {
-                StudentsModel student=new StudentsModel(rs.getString("UserId"),rs.getInt("StudentId"));
+                    StudentsModel student=new StudentsModel(rs.getString("UserId"), new SimpleIntegerProperty(rs.getInt("StudentId")));
                 students.add(student);
             }
         }

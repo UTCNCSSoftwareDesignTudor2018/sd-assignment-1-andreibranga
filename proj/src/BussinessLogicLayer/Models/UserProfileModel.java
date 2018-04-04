@@ -1,5 +1,7 @@
 package BussinessLogicLayer.Models;
 
+import DataAccessLayer.DAO.AppUsersDAO;
+
 import java.util.Objects;
 
 public class UserProfileModel {
@@ -146,7 +148,7 @@ public class UserProfileModel {
     }
 
     public AppUsersModel getAppUsersByUserId() {
-        return appUsersByUserId;
+        return AppUsersDAO.findById(userId);
     }
 
     public void setAppUsersByUserId(AppUsersModel appUsersByUserId) {
