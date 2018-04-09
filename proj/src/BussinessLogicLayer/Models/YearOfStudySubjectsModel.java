@@ -11,12 +11,7 @@ public class YearOfStudySubjectsModel {
     private SubjectsModel subjectsBySubjectId;
     private YearOfStudyModel yearOfStudyByYearOfStudyId;
 
-    public YearOfStudySubjectsModel(int subjectId, int yearOfStudyId, SubjectsModel subjectsBySubjectId, YearOfStudyModel yearOfStudyByYearOfStudyId) {
-        this.subjectId = subjectId;
-        this.yearOfStudyId = yearOfStudyId;
-        this.subjectsBySubjectId = subjectsBySubjectId;
-        this.yearOfStudyByYearOfStudyId = yearOfStudyByYearOfStudyId;
-    }
+
 
     public YearOfStudySubjectsModel(int subjectId, int yearOfStudyId) {
         this.subjectId = subjectId;

@@ -35,8 +35,8 @@ public class StudentsModel {
         this.studentId = studentId;
     }
 
-    public SimpleIntegerProperty getStudentId() {
-        return studentId;
+    public int getStudentId() {
+        return studentId.get();
     }
 
     public void setStudentId(SimpleIntegerProperty studentId) {

@@ -17,6 +17,10 @@ public class StudentGradesDAO
 
 
     private final static String GetGradesForStudentStatementString="SELECT * FROM StudentGrades WHERE StudentId =?";
+    private final static  String updateStatementString =
+            "UPDATE StudentGrades SET Grade= ?" +
+                    " WHERE StudentId= ? and SubjectId= ? ";
+
 
 
     public static ArrayList<StudentGradesModel> GetAllGradesForStudent(int StudentId)
@@ -68,6 +72,29 @@ public class StudentGradesDAO
             LOGGER.log(Level.WARNING, "StudentGradesDAO:insert " + e.getMessage());
         } finally {
             ConnectionFactory.close(insertStatement);
+            ConnectionFactory.close(dbConnection);
+        }
+    }
+
+    public static void update(int studentId,int subjectId,float grade) {
+        Connection dbConnection = ConnectionFactory.getConnection();
+
+        PreparedStatement updateString = null;
+        try {
+            updateString = dbConnection.prepareStatement(updateStatementString, Statement.RETURN_GENERATED_KEYS);
+            updateString.setFloat(1,grade);
+            updateString.setInt(2,studentId);
+            updateString.setInt(3,subjectId);
+
+
+
+            updateString.executeUpdate();
+
+        } catch (SQLException e) {
+
+            LOGGER.log(Level.WARNING, "StudentGradesDAO:insert " + e.getMessage());
+        } finally {
+            ConnectionFactory.close(updateString);
             ConnectionFactory.close(dbConnection);
         }
     }

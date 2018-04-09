@@ -15,7 +15,7 @@ public class GroupDAO {
     private static  final String insertStatementString="INSERT INTO Group (YearOfStudyId,GroupName,Description,IsActive)"
             + " VALUES (?,?,?,?)";
 
-    private final static String findStatementString = "SELECT * FROM Group where Id = ?";
+    private final static String findStatementString = "SELECT * FROM [StudentsDB].[dbo].[Group] where Id = ?";
 
     private final static String selectAllStatementString="SELECT * FROM Group";
 

@@ -4,20 +4,36 @@ import BussinessLogicLayer.Models.AppUsersModel;
 import BussinessLogicLayer.Models.StudentsModel;
 import BussinessLogicLayer.Services.AppUserService;
 import BussinessLogicLayer.Services.StudentService;
+import javafx.beans.property.IntegerProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 
 import javax.xml.soap.Text;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Optional;
 
 public class MainController {
     @FXML
     private TableView<StudentsModel> studentTable;
+
+    @FXML
+    private TableColumn<StudentsModel, Number> studentId;
+
+    @FXML
+    private TableColumn<StudentsModel, String> StudentName;
 
     @FXML
     private Button editButton;
@@ -77,6 +93,7 @@ public class MainController {
         if(user.IsInRole("student"))
         {
              role=" student";
+             gradesButton.setVisible(true);
         }
         else
         {
@@ -101,12 +118,17 @@ public class MainController {
             studentTable.setVisible(false);
         }
 
-        studentTable = new TableView<>();
+
+            initStudentsTable();
+
+    }
+
+    private void initStudentsTable()
+    {
         students= StudentService.GetAllStudents();
-        final ObservableList<StudentsModel> studentsList= FXCollections.observableArrayList(students);
-        studentTable.setItems(studentsList);
-
-
+        studentId.setCellValueFactory(new PropertyValueFactory<StudentsModel,Number>("studentId"));
+        StudentName.setCellValueFactory(new PropertyValueFactory<StudentsModel,String>("StudentName"));
+        studentTable.getItems().setAll(students);
     }
 
     @FXML
@@ -158,6 +180,88 @@ midnameText.setDisable(false);
 
     }
 
+    @FXML
+    void onClick(MouseEvent event) throws IOException {
+        if (event.getClickCount() > 1) {
+            onEdit();
+        }
+    }
+
+
+    public void onEdit() throws IOException {
+        // check the table's selected item and get selected item
+        if (studentTable.getSelectionModel().getSelectedItem() != null) {
+            StudentsModel selectedStudent = studentTable.getSelectionModel().getSelectedItem();
+openStudentDetails(selectedStudent);
+        }
+    }
+
+    private void openStudentDetails(StudentsModel student) throws IOException {
+        Stage currentStage = (Stage) nameText.getScene().getWindow();
+        StudentsModel newStudent=StudentService.getStudentById(student.getStudentId());
+        AppUsersModel newUser=AppUserService.GetUserById(newStudent.getUserId());
+
+        Stage stage=new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(StudentDetailController.class.getResource("/Views/StudentDetail.fxml"));
+        Parent root = fxmlLoader.load();
+        StudentDetailController controller = fxmlLoader.getController();
+        controller.setUser(newUser);
+        controller.setStudent(newStudent);
+        controller.init();
+        stage.setTitle("Student: "+student.getStudentName());
+        Scene scene = new Scene(root,800,700);
+
+        stage.setScene(scene);
+
+        stage.show();
+
+
+    }
+
+    private void openGradeDetails(StudentsModel student)throws IOException
+    {
+        Stage currentStage = (Stage) nameText.getScene().getWindow();
+        StudentsModel newStudent=StudentService.getStudentById(student.getStudentId());
+        AppUsersModel newUser=AppUserService.GetUserById(newStudent.getUserId());
+
+        Stage stage=new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(StudentGradesController.class.getResource("/Views/Grades.fxml"));
+        Parent root = fxmlLoader.load();
+        StudentGradesController controller = fxmlLoader.getController();
+        controller.setUser(newUser);
+        controller.setStudent(newStudent);
+        controller.init();
+        stage.setTitle("Student: "+student.getStudentName());
+        Scene scene = new Scene(root,433,574);
+
+        stage.setScene(scene);
+
+        stage.show();
+    }
+
+
+    @FXML
+    private Button gradesButton;
+
+
+    @FXML
+    void onGradesButtonPressed(ActionEvent event) throws IOException {
+
+        StudentsModel found = null;
+        for (StudentsModel p : StudentService.GetAllStudents()) {
+            if (p.getUserId().equals(user.getUserId())) {
+                found = p;
+                break;
+            }
+        }
+        StudentsModel student= found;
+
+        if(student!=null)
+        {
+            openGradeDetails(student);
+        }
+
+    }
 
 
 

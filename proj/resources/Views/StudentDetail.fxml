@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PresentationLayer.Controllers.MainController">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PresentationLayer.Controllers.StudentDetailController">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />
@@ -21,9 +21,9 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <Pane prefHeight="700.0" prefWidth="800.0">
+      <Pane fx:id="textFieldDetail" prefHeight="700.0" prefWidth="800.0">
          <children>
-            <Text layoutX="75.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your profile: " wrappingWidth="144.21875">
+            <Text layoutX="75.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student profile: " wrappingWidth="144.21875">
                <font>
                   <Font size="18.0" />
                </font>
@@ -48,18 +48,23 @@
             <TextField fx:id="zipText" disable="true" layoutX="136.0" layoutY="504.0" />
             <TextField fx:id="emailText" disable="true" layoutX="136.0" layoutY="553.0" />
             <Text layoutX="14.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="118.21875" />
-            <TextField fx:id="welcomeText" disable="true" editable="false" layoutX="226.0" layoutY="30.0" prefHeight="45.0" prefWidth="343.0">
-               <font>
-                  <Font size="24.0" />
-               </font></TextField>
             <Button fx:id="editButton" layoutX="58.0" layoutY="616.0" mnemonicParsing="false" onAction="#onEdit" prefHeight="32.0" prefWidth="83.0" text="EDIT" />
             <Button fx:id="saveButton" disable="true" layoutX="170.0" layoutY="616.0" mnemonicParsing="false" onAction="#onSave" prefHeight="32.0" prefWidth="83.0" text="SAVE" />
-            <TableView fx:id="studentTable" layoutX="422.0" layoutY="142.0" onMouseClicked="#onClick" prefHeight="357.0" prefWidth="309.0">
-               <columns>
-                  <TableColumn fx:id="studentId" prefWidth="95.0" text="ID" />
-                  <TableColumn fx:id="StudentName" prefWidth="213.0" text="Name" />
-               </columns></TableView>
-            <Button fx:id="gradesButton" defaultButton="true" layoutX="439.0" layoutY="511.0" mnemonicParsing="false" onAction="#onGradesButtonPressed" prefHeight="32.0" prefWidth="260.0" text="GRADES" visible="false" />
+            <Text fx:id="textFieldOpen" layoutX="170.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text texttext texttext texttext text" wrappingWidth="361.21875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TableView fx:id="subjectsTable" layoutX="389.0" layoutY="138.0" onMouseClicked="#onClick" prefHeight="311.0" prefWidth="369.0">
+              <columns>
+                <TableColumn fx:id="subjectName" prefWidth="137.0" text="Subject" />
+                <TableColumn fx:id="description" prefWidth="231.0" text="Description" />
+              </columns>
+            </TableView>
+            <TextField fx:id="subjectNName" disable="true" layoutX="389.0" layoutY="496.0" prefHeight="26.0" prefWidth="361.0" />
+            <TextField fx:id="gradeField" layoutX="598.0" layoutY="546.0" />
+            <Text layoutX="508.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GRADE" wrappingWidth="83.00000846385956" />
+            <Button fx:id="setGradeButton" layoutX="520.0" layoutY="603.0" mnemonicParsing="false" onAction="#onSetGradeButton" prefHeight="32.0" prefWidth="111.0" text="CHANGE" />
          </children>
       </Pane>
    </children>
