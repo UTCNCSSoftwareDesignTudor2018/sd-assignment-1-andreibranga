@@ -1,11 +1,13 @@
 package PresentationLayer.Controllers;
 
+import BussinessLogicLayer.Models.AppReportModel;
 import BussinessLogicLayer.Models.AppUsersModel;
 import BussinessLogicLayer.Models.StudentsModel;
 import BussinessLogicLayer.Models.SubjectsModel;
 import BussinessLogicLayer.Services.AppUserService;
 import BussinessLogicLayer.Services.GradingService;
 import BussinessLogicLayer.Services.StudentService;
+import com.sun.tools.javac.util.Pair;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -17,8 +19,12 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.Map;
 
 public class StudentDetailController
 {
@@ -197,6 +203,42 @@ if(subjectId>0)
 {
     GradingService.updateGradeForSubject(student.getStudentId(),subjectId,gradeField.getText());
 }
+
+    }
+
+
+    @FXML
+    private Button reportbtn;
+
+    @FXML
+    void onReport(ActionEvent event) throws FileNotFoundException, UnsupportedEncodingException {
+
+        AppReportModel report=new AppReportModel();
+        report.setName(student.getStudentName());
+        report.setSurname(user.getUserProfile().getSurname());
+        report.setMidName(user.getUserProfile().getMidName());
+        report.setGroup(StudentService.getStudentGroup(student.getStudentId()).getGroupName());
+        report.setYear(StudentService.getYearOfStudyForStudent(student.getStudentId()).getYearName());
+        report.setStudentId(String.valueOf(student.getStudentId()));
+
+
+        ArrayList<Pair<SubjectsModel,Float>> grades=new ArrayList<>();
+
+        ArrayList<SubjectsModel> subj=StudentService.getAllSubjectsForStudent(student.getStudentId());
+        for (SubjectsModel s:subj
+             ) {
+            Pair<SubjectsModel,Float> gr=new Pair<SubjectsModel,Float>(s,
+                    GradingService.getGradeforSubject(student.getStudentId(),s.getId()).equals("NOT SET")?Float.valueOf(0):
+            Float.valueOf(GradingService.getGradeforSubject(student.getStudentId(),s.getId())));
+            grades.add(gr);
+        }
+        report.setGrades(grades);
+
+        PrintWriter writer = new PrintWriter("report-stud-"+student.getStudentId()+".txt", "UTF-8");
+        writer.println(report.toString());
+        writer.close();
+
+        System.out.println(report.toString());
 
     }
 }

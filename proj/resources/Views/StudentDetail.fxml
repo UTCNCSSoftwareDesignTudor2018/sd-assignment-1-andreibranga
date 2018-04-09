@@ -65,6 +65,7 @@
             <TextField fx:id="gradeField" layoutX="598.0" layoutY="546.0" />
             <Text layoutX="508.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GRADE" wrappingWidth="83.00000846385956" />
             <Button fx:id="setGradeButton" layoutX="520.0" layoutY="603.0" mnemonicParsing="false" onAction="#onSetGradeButton" prefHeight="32.0" prefWidth="111.0" text="CHANGE" />
+            <Button fx:id="reportbtn" layoutX="531.0" layoutY="41.0" mnemonicParsing="false" onAction="#onReport" prefHeight="32.0" prefWidth="198.0" text="REPORT" />
          </children>
       </Pane>
    </children>
