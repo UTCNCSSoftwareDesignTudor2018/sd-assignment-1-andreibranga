@@ -12,12 +12,12 @@ import java.util.logging.Logger;
 
 public class GroupDAO {
     protected static final Logger LOGGER= Logger.getLogger(GroupDAO.class.getName());
-    private static  final String insertStatementString="INSERT INTO Group (YearOfStudyId,GroupName,Description,IsActive)"
+    private static  final String insertStatementString="INSERT INTO [StudentsDB].[dbo].[Group] (YearOfStudyId,GroupName,Description,IsActive)"
             + " VALUES (?,?,?,?)";
 
     private final static String findStatementString = "SELECT * FROM [StudentsDB].[dbo].[Group] where Id = ?";
 
-    private final static String selectAllStatementString="SELECT * FROM Group";
+    private final static String selectAllStatementString="SELECT * FROM [StudentsDB].[dbo].[Group]";
 
     public static ArrayList<GroupModel> GetAllGroups()
     {

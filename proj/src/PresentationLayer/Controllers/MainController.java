@@ -98,6 +98,9 @@ public class MainController {
         else
         {
             role=" teacher";
+            newStudButton.setVisible(true);
+            refreshBtn.setVisible(true);
+
         }
         welcomeText.setText("Welcome" +role+
                 ", "+ user.getUserName());
@@ -263,6 +266,37 @@ openStudentDetails(selectedStudent);
 
     }
 
+    @FXML
+    private Button newStudButton;
 
+
+    @FXML
+    void onNewStudButton(ActionEvent event) throws IOException {
+        Stage currentStage = (Stage) nameText.getScene().getWindow();
+
+        Stage stage=new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(StudentGradesController.class.getResource("/Views/AddStudent.fxml"));
+        Parent root = fxmlLoader.load();
+        AddStudentController controller = fxmlLoader.getController();
+        controller.init();
+        stage.setTitle("Add Student ");
+        Scene scene = new Scene(root,1000,600);
+
+        stage.setScene(scene);
+
+        stage.show();
+
+
+    }
+
+
+    @FXML
+    private Button refreshBtn;
+
+    @FXML
+    void onRefresh(ActionEvent event) {
+        initStudentsTable();
+
+    }
 
 }

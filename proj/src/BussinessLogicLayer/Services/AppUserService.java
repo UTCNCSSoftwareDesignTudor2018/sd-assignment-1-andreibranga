@@ -3,10 +3,9 @@ package BussinessLogicLayer.Services;
 import BussinessLogicLayer.Models.AppRolesModel;
 import BussinessLogicLayer.Models.AppUserRolesModel;
 import BussinessLogicLayer.Models.AppUsersModel;
-import DataAccessLayer.DAO.AppRolesDAO;
-import DataAccessLayer.DAO.AppUserRolesDao;
-import DataAccessLayer.DAO.AppUsersDAO;
-import DataAccessLayer.DAO.UserProfileDAO;
+import BussinessLogicLayer.Models.StudentsModel;
+import DataAccessLayer.DAO.*;
+import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
 
 import java.util.ArrayList;
 import java.util.Optional;
@@ -53,5 +52,34 @@ public class AppUserService {
         UserProfileDAO.update(userId,name,surname,midname,phone,nationality,Country,
                 County,address,zip);
     }
+
+    public static String AddUser(String userName,String password,String email)
+    {
+        AppUsersDAO.insert(userName,password,email);
+
+        AppUsersModel found = null;
+        for (AppUsersModel p : AppUsersDAO.GetAllUsers()) {
+            if (p.getUserName().equals(userName)) {
+                found = p;
+                break;
+            }
+        }
+        AppUsersModel user= found;
+
+        AppUserRolesDao.AddUserToRole(found.getUserId(),2);
+
+        return user.getUserId();
+    }
+
+
+    public static void AddUserProfile(String userId,String name,String surname,String midName,
+                               String phone,String Nationality,String country,String county,
+                               String address,String zip)
+    {
+        UserProfileDAO.insert(userId,name,surname,midName,
+                phone,Nationality,country,county,address,zip);
+    }
+
+
 
 }

@@ -56,4 +56,29 @@ return yearOfStudyModel;
 
         return subjects;
     }
+
+    public static int MakeUserStudent(String Userid)
+    {
+        StudentsDao.MakeUserStudent(Userid);
+        StudentsModel found=null;
+        for (StudentsModel p : StudentsDao.GetAllStudents()) {
+            if (p.getUserId().equals( Userid)) {
+                found = p;
+                break;
+            }
+        }
+
+        return found.getStudentId();
+
+    }
+
+    public static void AddStudentToGroup(int studentId,int GroupId)
+    {
+        StudentEnrollmentDAO.AddStudentToGroup(studentId,GroupId);
+    }
+
+    public static ArrayList<GroupModel> getAllGroups()
+    {
+        return GroupDAO.GetAllGroups();
+    }
 }

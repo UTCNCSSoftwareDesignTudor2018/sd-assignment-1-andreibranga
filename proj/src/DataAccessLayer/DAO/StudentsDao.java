@@ -12,8 +12,8 @@ import java.util.logging.Logger;
 
 public class StudentsDao {
     protected static final Logger LOGGER= Logger.getLogger(StudentsDao.class.getName());
-    private static  final String makeUserStudentStatementString="INSERT INTO Students (UserId,StudentId)"
-            + " VALUES (?,?)";
+    private static  final String makeUserStudentStatementString="INSERT INTO Students (UserId)"
+            + " VALUES (?)";
 
 
     private final static String GetAllStudentsStatementString="SELECT * FROM Students";
@@ -47,14 +47,13 @@ public class StudentsDao {
         return students;
     }
 
-    public static void MakeUserStudent(String UserId, int StudentId ) {
+    public static void MakeUserStudent(String UserId ) {
         Connection dbConnection = ConnectionFactory.getConnection();
 
         PreparedStatement insertStatement = null;
         try {
             insertStatement = dbConnection.prepareStatement(makeUserStudentStatementString, Statement.RETURN_GENERATED_KEYS);
             insertStatement.setString(1, UserId);
-            insertStatement.setInt(2, StudentId);
 
             insertStatement.executeUpdate();
 

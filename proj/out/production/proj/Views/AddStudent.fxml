@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PresentationLayer.Controllers.AddStudentController">
+   <children>
+      <Pane fx:id="paneOne" layoutX="58.0" layoutY="36.0" prefHeight="565.0" prefWidth="442.0">
+         <children>
+            <Text layoutX="36.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="117.21875" />
+            <Text layoutX="36.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="117.21875" />
+            <TextField fx:id="usernameTxt" layoutX="221.0" layoutY="1.0" />
+            <TextField fx:id="nameTxt" layoutX="221.0" layoutY="101.0" />
+            <TextField fx:id="surnameTxt" layoutX="221.0" layoutY="149.0" />
+            <TextField fx:id="midnameTxt" layoutX="221.0" layoutY="195.0" />
+            <TextField fx:id="phoneTxt" layoutX="221.0" layoutY="243.0" />
+            <TextField fx:id="nationalityTxt" layoutX="221.0" layoutY="290.0" />
+            <TextField fx:id="countryTxt" layoutX="221.0" layoutY="338.0" />
+            <TextField fx:id="countyTxt" layoutX="221.0" layoutY="388.0" />
+            <TextField fx:id="addressTxt" layoutX="221.0" layoutY="435.0" />
+            <TextField fx:id="zipTxt" layoutX="221.0" layoutY="485.0" />
+            <Text layoutX="36.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="117.21875" />
+            <Text layoutX="36.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surname" wrappingWidth="117.21875" />
+            <Text layoutX="36.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MidName" wrappingWidth="117.21875" />
+            <Text layoutX="36.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" wrappingWidth="117.21875" />
+            <Text layoutX="36.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nationality" wrappingWidth="117.21875" />
+            <Text layoutX="36.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" wrappingWidth="117.21875" />
+            <Text layoutX="36.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="County" wrappingWidth="117.21875" />
+            <Text layoutX="36.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" wrappingWidth="117.21875" />
+            <Text layoutX="36.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ZIP" wrappingWidth="117.21875" />
+            <PasswordField fx:id="passwordTxt" layoutX="221.0" layoutY="27.0" />
+            <Button fx:id="nextBotton" layoutX="124.0" layoutY="524.0" mnemonicParsing="false" onAction="#onNextButton" prefHeight="27.0" prefWidth="167.0" text="NEXT" />
+            <Text layoutX="36.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="117.21875" />
+            <TextField fx:id="emailTxt" layoutX="221.0" layoutY="54.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneTwo" disable="true" layoutX="500.0" layoutY="36.0" prefHeight="565.0" prefWidth="442.0">
+         <children>
+            <TableView fx:id="groupTable" layoutX="8.0" layoutY="8.0" onMouseClicked="#onClick" prefHeight="502.0" prefWidth="426.0">
+              <columns>
+                <TableColumn fx:id="groupName" prefWidth="174.0" text="Group name" />
+                <TableColumn fx:id="description" prefWidth="251.0" text="Description" />
+              </columns>
+            </TableView>
+            <Button fx:id="saveButton" disable="true" layoutX="10.0" layoutY="524.0" mnemonicParsing="false" onAction="#onSaveButton" prefHeight="27.0" prefWidth="418.0" text="SAVE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
