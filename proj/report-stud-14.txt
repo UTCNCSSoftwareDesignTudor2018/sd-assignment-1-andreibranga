@@ -1,0 +1,15 @@
+Student Report
+Name=Florin - Popa
+Surname=Popa
+MidName=-
+StudentId=14
+Group=30431
+Year=Year 1
+
+
+Grades: 
+
+Subject: Mathematics    Grade: 0.0
+Subject: Computer Architecture    Grade: 0.0
+Subject: Data Structures and algorithms    Grade: 0.0
+

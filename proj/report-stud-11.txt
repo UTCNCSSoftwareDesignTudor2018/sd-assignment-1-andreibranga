@@ -1,0 +1,15 @@
+Student Report
+Name=Ioana - Popa
+Surname=Popa
+MidName=-
+StudentId=11
+Group=30431
+Year=Year 1
+
+
+Grades: 
+
+Subject: Mathematics    Grade: 9.6
+Subject: Computer Architecture    Grade: 10.0
+Subject: Data Structures and algorithms    Grade: 7.63
+

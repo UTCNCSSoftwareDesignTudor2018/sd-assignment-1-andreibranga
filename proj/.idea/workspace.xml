@@ -79,115 +79,7 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="AppReportModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BussinessLogicLayer/Models/AppReportModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="92" column="22" lean-forward="false" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#517#518#0" expanded="true" />
-                <element signature="e#592#593#0" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#697#698#0" expanded="true" />
-                <element signature="e#724#725#0" expanded="true" />
-                <element signature="e#764#765#0" expanded="true" />
-                <element signature="e#791#792#0" expanded="true" />
-                <element signature="e#825#826#0" expanded="true" />
-                <element signature="e#855#856#0" expanded="true" />
-                <element signature="e#901#902#0" expanded="true" />
-                <element signature="e#934#935#0" expanded="true" />
-                <element signature="e#968#969#0" expanded="true" />
-                <element signature="e#998#999#0" expanded="true" />
-                <element signature="e#1044#1045#0" expanded="true" />
-                <element signature="e#1077#1078#0" expanded="true" />
-                <element signature="e#1113#1114#0" expanded="true" />
-                <element signature="e#1145#1146#0" expanded="true" />
-                <element signature="e#1195#1196#0" expanded="true" />
-                <element signature="e#1232#1233#0" expanded="true" />
-                <element signature="e#1264#1265#0" expanded="true" />
-                <element signature="e#1292#1293#0" expanded="true" />
-                <element signature="e#1334#1335#0" expanded="true" />
-                <element signature="e#1363#1364#0" expanded="true" />
-                <element signature="e#1394#1395#0" expanded="true" />
-                <element signature="e#1421#1422#0" expanded="true" />
-                <element signature="e#1461#1462#0" expanded="true" />
-                <element signature="e#1488#1489#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FXMLLoader.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="1773" column="0" lean-forward="false" selection-start-line="1773" selection-start-column="0" selection-end-line="1773" selection-end-column="0" />
-              <folding>
-                <element signature="e#66921#66922#0" expanded="true" />
-                <element signature="e#66966#66967#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentDetail.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/Views/StudentDetail.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="14" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentDetailController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/StudentDetailController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="238" column="23" lean-forward="true" selection-start-line="238" selection-start-column="23" selection-end-line="238" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1102#1103#0" expanded="true" />
-                <element signature="e#1132#1133#0" expanded="true" />
-                <element signature="e#1185#1186#0" expanded="true" />
-                <element signature="e#1223#1224#0" expanded="true" />
-                <element signature="e#1297#1298#0" expanded="true" />
-                <element signature="e#1324#1325#0" expanded="true" />
-                <element signature="e#1371#1372#0" expanded="true" />
-                <element signature="e#1403#1404#0" expanded="true" />
-                <element signature="e#6758#6779#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="report-stud-9.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/report-stud-9.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GradingService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BussinessLogicLayer/Services/GradingService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -210,10 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Controllers/Main.java" />
-        <option value="$PROJECT_DIR$/src/PresentationLayer/Controllers/Main.java" />
-        <option value="$PROJECT_DIR$/src/PresentationLayer/Controllers/Controller.java" />
-        <option value="$PROJECT_DIR$/src/BussinessLogicLayer/Models/AppRolesModel.java" />
         <option value="$PROJECT_DIR$/src/BussinessLogicLayer/Models/StudentGradesModel.java" />
         <option value="$PROJECT_DIR$/src/BussinessLogicLayer/Models/StudentProfileModel.java" />
         <option value="$PROJECT_DIR$/src/BussinessLogicLayer/Models/YearOfStudyModel.java" />
@@ -246,12 +134,25 @@
         <option value="$PROJECT_DIR$/resources/Views/AddStudent.fxml" />
         <option value="$PROJECT_DIR$/src/DataAccessLayer/DAO/StudentsDao.java" />
         <option value="$PROJECT_DIR$/src/DataAccessLayer/DAO/GroupDAO.java" />
-        <option value="$PROJECT_DIR$/src/PresentationLayer/Controllers/AddStudentController.java" />
         <option value="$PROJECT_DIR$/src/BussinessLogicLayer/Services/AppUserService.java" />
         <option value="$PROJECT_DIR$/src/BussinessLogicLayer/Services/StudentService.java" />
-        <option value="$PROJECT_DIR$/src/PresentationLayer/Controllers/MainController.java" />
         <option value="$PROJECT_DIR$/src/BussinessLogicLayer/Models/AppReportModel.java" />
+        <option value="$PROJECT_DIR$/src/BussinessLogicLayer/Validators/EmailValidator.java" />
+        <option value="$PROJECT_DIR$/src/BussinessLogicLayer/Validators/AddressValidator.java" />
+        <option value="$PROJECT_DIR$/src/BussinessLogicLayer/Validators/GradeValidator.java" />
+        <option value="$PROJECT_DIR$/src/BussinessLogicLayer/Validators/NameValidator.java" />
+        <option value="$PROJECT_DIR$/src/BussinessLogicLayer/Validators/PasswordValidator.java" />
+        <option value="$PROJECT_DIR$/src/BussinessLogicLayer/Validators/PhoneValidator.java" />
+        <option value="$PROJECT_DIR$/src/BussinessLogicLayer/Validators/DescriptionValidator.java" />
+        <option value="$PROJECT_DIR$/src/BussinessLogicLayer/Validators/UserNameValidator.java" />
+        <option value="$PROJECT_DIR$/src/BussinessLogicLayer/Validators/ZIPValidator.java" />
+        <option value="$PROJECT_DIR$/src/PresentationLayer/Validators/ZIPValidator.java" />
+        <option value="$PROJECT_DIR$/src/PresentationLayer/Controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/src/PresentationLayer/Validators/AddressValidator.java" />
+        <option value="$PROJECT_DIR$/src/PresentationLayer/Validators/NameValidator.java" />
         <option value="$PROJECT_DIR$/src/PresentationLayer/Controllers/StudentDetailController.java" />
+        <option value="$PROJECT_DIR$/src/PresentationLayer/Validators/PasswordValidator.java" />
+        <option value="$PROJECT_DIR$/src/PresentationLayer/Controllers/AddStudentController.java" />
       </list>
     </option>
   </component>
@@ -286,8 +187,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -319,12 +218,40 @@
             </path>
             <path>
               <item name="proj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DataAccessLayer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="PresentationLayer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="PresentationLayer" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="PresentationLayer" type="462c0819:PsiDirectoryNode" />
+              <item name="Validators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proj" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -348,6 +275,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="SQL Server (Microsoft)" />
     <property name="JPA.DatabaseSchemaImportDialog" value="f7ff6aad-68e8-495e-bda0-b29743ca76c0" />
+    <property name="jdk.selected.PLUGIN_MODULE" value="IntelliJ IDEA IU-173.4548.28" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -660,6 +588,10 @@
       <workItem from="1523261643140" duration="17611000" />
       <workItem from="1523281323641" duration="4000" />
       <workItem from="1523281332335" duration="2609000" />
+      <workItem from="1523365860534" duration="3003000" />
+      <workItem from="1523369389847" duration="235000" />
+      <workItem from="1523369629716" duration="1093000" />
+      <workItem from="1523370998012" duration="16000" />
     </task>
     <servers />
   </component>
@@ -696,15 +628,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52601000" />
+    <option name="totallyTimeSpent" value="56948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="975" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33997786" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -712,12 +642,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18630952" sideWeight="0.5066007" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23928571" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18630952" sideWeight="0.49339935" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18630952" sideWeight="0.49339935" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -732,8 +661,10 @@
       <window_info id="SQL Generator" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33997786" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18630952" sideWeight="0.5066007" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23928571" sideWeight="0.43189368" order="3" side_tool="true" content_ui="tabs" />
@@ -835,129 +766,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/BussinessLogicLayer/Models/StudentGradesModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="74" lean-forward="false" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BussinessLogicLayer/Models/StudentProfileModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataAccessLayer/DAO/AppUserRolesDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1522596679507" expanded="true" signature="437:507" ph="INSERT INTO AppUserRoles... " />
-            <marker date="1522596679507" expanded="true" signature="576:618" ph="SELECT * FRO... AppUserRoles" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/TextField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/TextInputControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="347" column="35" lean-forward="false" selection-start-line="347" selection-start-column="35" selection-end-line="347" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/sqljdbc42-6.0.8112.100.jar!/com/microsoft/sqlserver/jdbc/SQLServerConnection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="3074" column="0" lean-forward="false" selection-start-line="3074" selection-start-column="0" selection-end-line="3074" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/sqljdbc42-6.0.8112.100.jar!/com/microsoft/sqlserver/jdbc/SQLServerPreparedStatement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="252" column="0" lean-forward="false" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/sqljdbc42-6.0.8112.100.jar!/com/microsoft/sqlserver/jdbc/SQLServerStatement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="625" column="0" lean-forward="false" selection-start-line="625" selection-start-column="0" selection-end-line="625" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataAccessLayer/DAO/AppUsersDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#887#902#0" expanded="false" />
-            <marker date="1522597688330" expanded="true" signature="490:581" ph="INSERT INTO AppUsers... " />
-            <marker date="1522597688330" expanded="true" signature="640:679" ph="SELECT * FRO... AppUsers" />
-            <marker date="1522597688330" expanded="true" signature="741:763" ph="SELECT * FRO... AppUsers" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/javafx-src.zip!/javafx/event/EventType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="63" lean-forward="false" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BussinessLogicLayer/Models/AppUsersModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BussinessLogicLayer/Models/AppUserRolesModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="e#1146#1147#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataAccessLayer/DAO/AppRolesDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
           <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding>
-            <marker date="1522595018375" expanded="true" signature="418:477" ph="INSERT INTO AppRoles... " />
-            <marker date="1522595018375" expanded="true" signature="536:575" ph="SELECT * FRO... AppRoles" />
-            <marker date="1522595018375" expanded="true" signature="637:659" ph="SELECT * FRO... AppRoles" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -991,9 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#583#584#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1001,10 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
-          <folding>
-            <element signature="e#1484#1485#0" expanded="true" />
-            <element signature="e#1528#1529#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1012,9 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="e#1528#1529#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1022,12 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="e#597#598#0" expanded="false" />
-            <element signature="e#643#644#0" expanded="false" />
-            <element signature="e#770#771#0" expanded="false" />
-            <element signature="e#816#817#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1049,18 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#730#731#0" expanded="false" />
-            <element signature="e#771#772#0" expanded="false" />
-            <element signature="e#815#816#0" expanded="false" />
-            <element signature="e#866#867#0" expanded="false" />
-            <element signature="e#925#926#0" expanded="false" />
-            <element signature="e#969#970#0" expanded="false" />
-            <element signature="e#1188#1189#0" expanded="false" />
-            <element signature="e#1253#1254#0" expanded="false" />
-            <element signature="e#1295#1296#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1068,11 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#828#852#0" expanded="true" />
-            <marker date="1522602927838" expanded="true" signature="456:535" ph="INSERT INTO StudentEnrollment... " />
-            <marker date="1522602927838" expanded="true" signature="608:658" ph="SELECT * FRO... StudentEnrollment" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1080,15 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-131">
           <caret line="55" column="105" lean-forward="false" selection-start-line="55" selection-start-column="105" selection-end-line="55" selection-end-column="105" />
-          <folding>
-            <element signature="e#2069#2095#0" expanded="true" />
-            <marker date="1523269046508" expanded="true" signature="464:544" ph="INSERT INTO YearOfStudySubjects... " />
-            <marker date="1523269046508" expanded="true" signature="623:656" ph="SELECT * FRO... YearOfStudySubjects" />
-            <marker date="1523269046508" expanded="true" signature="740:773" ph="SELECT * FRO... YearOfStudySubjects" />
-            <marker date="1523269046508" expanded="true" signature="740:779" ph="SELECT * FRO... YearOfStudySubjects" />
-            <marker date="1523269046508" expanded="true" signature="740:780" ph="SELECT * FRO... YearOfStudySubjects" />
-            <marker date="1523269046508" expanded="true" signature="740:797" ph="SELECT * FRO... YearOfStudySubjects" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1096,11 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-          <folding>
-            <marker date="1522604714932" expanded="true" signature="485:551" ph="INSERT INTO StudentProfile... " />
-            <marker date="1522604714932" expanded="true" signature="610:658" ph="SELECT * FRO... StudentProfile" />
-            <marker date="1522604714932" expanded="true" signature="720:748" ph="SELECT * FRO... StudentProfile" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1108,12 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="157" column="17" lean-forward="true" selection-start-line="139" selection-start-column="4" selection-end-line="166" selection-end-column="5" />
-          <folding>
-            <marker date="1522858696795" expanded="true" signature="482:660" ph="INSERT INTO UserProfile... " />
-            <marker date="1522858696795" expanded="true" signature="719:761" ph="SELECT * FRO... UserProfile" />
-            <marker date="1522858696795" expanded="true" signature="823:848" ph="SELECT * FRO... UserProfile" />
-            <marker date="1522858696795" expanded="true" signature="921:1274" ph="UPDATE UserProfile... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1121,11 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="90" column="41" lean-forward="true" selection-start-line="90" selection-start-column="41" selection-end-line="90" selection-end-column="41" />
-          <folding>
-            <marker date="1523270488837" expanded="true" signature="503:588" ph="INSERT INTO StudentGrades... " />
-            <marker date="1523270488837" expanded="true" signature="661:707" ph="SELECT * FRO... StudentGrades" />
-            <marker date="1523270488837" expanded="true" signature="780:874" ph="UPDATE StudentGrades... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1134,15 +888,15 @@
         <state relative-caret-position="458">
           <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#760#761#0" expanded="false" />
+            <element signature="e#790#791#0" expanded="false" />
+            <element signature="e#843#844#0" expanded="false" />
+            <element signature="e#881#882#0" expanded="false" />
+            <element signature="e#955#956#0" expanded="false" />
+            <element signature="e#982#983#0" expanded="false" />
+            <element signature="e#1029#1030#0" expanded="false" />
+            <element signature="e#1061#1062#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1184,10 +938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <marker date="1523277681660" expanded="true" signature="525:582" ph="INSERT INTO Students... " />
-            <marker date="1523277681660" expanded="true" signature="650:672" ph="SELECT * FRO... Students" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1195,11 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="14" column="94" lean-forward="false" selection-start-line="14" selection-start-column="94" selection-end-line="14" selection-end-column="94" />
-          <folding>
-            <marker date="1523278734365" expanded="true" signature="489:608" ph="INSERT INTO Group... " />
-            <marker date="1523278734365" expanded="true" signature="667:720" ph="SELECT * FRO... Group" />
-            <marker date="1523278734365" expanded="true" signature="782:822" ph="SELECT * FRO... Group" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1207,7 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1215,7 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1223,7 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="8413" column="0" lean-forward="false" selection-start-line="8413" selection-start-column="0" selection-end-line="8413" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1231,7 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1239,7 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1247,10 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="2494" column="0" lean-forward="false" selection-start-line="2494" selection-start-column="0" selection-end-line="2494" selection-end-column="0" />
-          <folding>
-            <element signature="e#66617#66618#0" expanded="true" />
-            <element signature="e#66663#66664#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1258,31 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="297" column="28" lean-forward="true" selection-start-line="297" selection-start-column="28" selection-end-line="297" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1835#1836#0" expanded="true" />
-            <element signature="e#1862#1863#0" expanded="true" />
-            <element signature="e#1909#1910#0" expanded="true" />
-            <element signature="e#1941#1942#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/AddStudentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1291,84 +1002,60 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="24795">
           <caret line="1773" column="0" lean-forward="false" selection-start-line="1773" selection-start-column="0" selection-end-line="1773" selection-end-column="0" />
-          <folding>
-            <element signature="e#66921#66922#0" expanded="true" />
-            <element signature="e#66966#66967#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BussinessLogicLayer/Services/GradingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="90">
           <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BussinessLogicLayer/Models/AppReportModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
+        <state relative-caret-position="900">
           <caret line="92" column="22" lean-forward="false" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#825#826#0" expanded="true" />
-            <element signature="e#855#856#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1077#1078#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#1195#1196#0" expanded="true" />
-            <element signature="e#1232#1233#0" expanded="true" />
-            <element signature="e#1264#1265#0" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-            <element signature="e#1334#1335#0" expanded="true" />
-            <element signature="e#1363#1364#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#1421#1422#0" expanded="true" />
-            <element signature="e#1461#1462#0" expanded="true" />
-            <element signature="e#1488#1489#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/StudentDetailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="238" column="23" lean-forward="true" selection-start-line="238" selection-start-column="23" selection-end-line="238" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1102#1103#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
-            <element signature="e#1185#1186#0" expanded="true" />
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1297#1298#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1371#1372#0" expanded="true" />
-            <element signature="e#1403#1404#0" expanded="true" />
-            <element signature="e#6758#6779#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#488#489#0" expanded="false" />
+            <element signature="e#517#518#0" expanded="false" />
+            <element signature="e#592#593#0" expanded="false" />
+            <element signature="e#628#629#0" expanded="false" />
+            <element signature="e#697#698#0" expanded="false" />
+            <element signature="e#724#725#0" expanded="false" />
+            <element signature="e#764#765#0" expanded="false" />
+            <element signature="e#791#792#0" expanded="false" />
+            <element signature="e#825#826#0" expanded="false" />
+            <element signature="e#855#856#0" expanded="false" />
+            <element signature="e#901#902#0" expanded="false" />
+            <element signature="e#934#935#0" expanded="false" />
+            <element signature="e#968#969#0" expanded="false" />
+            <element signature="e#998#999#0" expanded="false" />
+            <element signature="e#1044#1045#0" expanded="false" />
+            <element signature="e#1077#1078#0" expanded="false" />
+            <element signature="e#1113#1114#0" expanded="false" />
+            <element signature="e#1145#1146#0" expanded="false" />
+            <element signature="e#1195#1196#0" expanded="false" />
+            <element signature="e#1232#1233#0" expanded="false" />
+            <element signature="e#1264#1265#0" expanded="false" />
+            <element signature="e#1292#1293#0" expanded="false" />
+            <element signature="e#1334#1335#0" expanded="false" />
+            <element signature="e#1363#1364#0" expanded="false" />
+            <element signature="e#1394#1395#0" expanded="false" />
+            <element signature="e#1421#1422#0" expanded="false" />
+            <element signature="e#1461#1462#0" expanded="false" />
+            <element signature="e#1488#1489#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1376,8 +1063,657 @@
     <entry file="file://$PROJECT_DIR$/report-stud-9.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report-stud-11.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Validators/EmailValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Validators/GradeValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Validators/PhoneValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="74" lean-forward="false" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Validators/DescriptionValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Validators/UserNameValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="69" lean-forward="false" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Validators/ZIPValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="69" lean-forward="false" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Validators/AddressValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Validators/NameValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1845">
+          <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1778#1779#0" expanded="false" />
+            <element signature="e#1805#1806#0" expanded="false" />
+            <element signature="e#1852#1853#0" expanded="false" />
+            <element signature="e#1884#1885#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Validators/PasswordValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/AddStudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="89" column="52" lean-forward="false" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/StudentDetailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2940">
+          <caret line="226" column="7" lean-forward="false" selection-start-line="226" selection-start-column="7" selection-end-line="234" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MODULES/mdl-proj">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-proj</OriginalElement>
+          <nodes>
+            <node x="" y="">mdl-proj</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="56.0" y="15.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//Users/andrei/Repositories/SDAssignment1/proj/src/BussinessLogicLayer;/Users/andrei/Repositories/SDAssignment1/proj/src/DataAccessLayer;/Users/andrei/Repositories/SDAssignment1/proj/src/PresentationLayer;/Users/andrei/Repositories/SDAssignment1/proj/src/Testing;">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/BussinessLogicLayer;/Users/andrei/Repositories/SDAssignment1/proj/src/DataAccessLayer;/Users/andrei/Repositories/SDAssignment1/proj/src/PresentationLayer;/Users/andrei/Repositories/SDAssignment1/proj/src/Testing;</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="483.0" y="426.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/BussinessLogicLayer">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>BussinessLogicLayer</OriginalElement>
+          <nodes>
+            <node x="0.0" y="208.0">BussinessLogicLayer.Models.AppUserRolesModel</node>
+            <node x="352.62807807807815" y="564.0">BussinessLogicLayer.Services.AppUserService</node>
+            <node x="1172.1291291291293" y="475.0">BussinessLogicLayer.Models.AppReportModel</node>
+            <node x="0.0" y="836.0">PresentationLayer</node>
+            <node x="1162.3530780780782" y="762.0">BussinessLogicLayer.Services.StudentService</node>
+            <node x="522.8262548262552" y="208.0">BussinessLogicLayer.Models.UserProfileModel</node>
+            <node x="1011.4624624624627" y="564.0">BussinessLogicLayer.Models.YearOfStudySubjectsModel</node>
+            <node x="73.33333333333326" y="129.0">DataAccessLayer.DAO.AppRolesDAO</node>
+            <node x="554.6280780780781" y="386.0">BussinessLogicLayer.Models.AppUsersModel</node>
+            <node x="1870.5267857142858" y="208.0">BussinessLogicLayer.Services.GradingService</node>
+            <node x="1874.6101190476188" y="0.0">BussinessLogicLayer.Models.StudentGradesModel</node>
+            <node x="835.4624624624627" y="475.0">DataAccessLayer.DAO.YearOfStudyDAO</node>
+            <node x="1213.9044776919777" y="386.0">BussinessLogicLayer.Models.SubjectsModel</node>
+            <node x="237.02083333333326" y="129.0">DataAccessLayer.DAO.StudentProfileDao</node>
+            <node x="742.9624624624627" y="386.0">BussinessLogicLayer.Models.YearOfStudyModel</node>
+            <node x="1505.1291291291293" y="564.0">BussinessLogicLayer.Models.StudentEnrollmentModel</node>
+            <node x="664.4624624624627" y="643.0">DataAccessLayer.DAO.StudentsDao</node>
+            <node x="203.85416666666663" y="0.0">BussinessLogicLayer.Models.StudentProfileModel</node>
+            <node x="168.2637548262552" y="297.0">DataAccessLayer.DAO.AppUserRolesDao</node>
+            <node x="389.62807807807815" y="297.0">DataAccessLayer.DAO.UserProfileDAO</node>
+            <node x="1084.9229676104678" y="643.0">DataAccessLayer.DAO.YearOfStudySubjectsDAO</node>
+            <node x="1821.2767857142858" y="129.0">DataAccessLayer.DAO.StudentGradesDAO</node>
+            <node x="21.583333333333258" y="0.0">BussinessLogicLayer.Models.AppRolesModel</node>
+            <node x="615.295795795796" y="564.0">BussinessLogicLayer.Models.StudentsModel</node>
+            <node x="1344.1291291291293" y="475.0">DataAccessLayer.DAO.SubjectsDAO</node>
+            <node x="900.295795795796" y="0.0">DataAccessLayer.Connection.ConnectionFactory</node>
+            <node x="1685.2767857142858" y="475.0">DataAccessLayer.DAO.GroupDAO</node>
+            <node x="1570.0267857142858" y="643.0">DataAccessLayer.DAO.StudentEnrollmentDAO</node>
+            <node x="1531.8396342771346" y="386.0">BussinessLogicLayer.Models.GroupModel</node>
+            <node x="541.2457957957961" y="475.0">DataAccessLayer.DAO.AppUsersDAO</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="BussinessLogicLayer.Services.AppUserService" target="DataAccessLayer.DAO.AppUserRolesDao">
+              <point x="-29.199999999999932" y="-14.5" />
+              <point x="396.4280780780782" y="534.0" />
+              <point x="208.0137548262552" y="534.0" />
+              <point x="-39.75" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.UserProfileDAO" target="BussinessLogicLayer.Models.UserProfileModel">
+              <point x="48.0" y="-14.5" />
+              <point x="509.62807807807815" y="267.0" />
+              <point x="555.6119691119694" y="267.0" />
+              <point x="-43.71428571428578" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.YearOfStudyDAO" target="DataAccessLayer.Connection.ConnectionFactory">
+              <point x="51.66666666666663" y="-14.5" />
+              <point x="964.6291291291293" y="109.0" />
+              <point x="975.920795795796" y="109.0" />
+              <point x="-6.875" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.YearOfStudySubjectsDAO" target="BussinessLogicLayer.Models.YearOfStudySubjectsModel">
+              <point x="-69.33333333333326" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Models.YearOfStudySubjectsModel" target="DataAccessLayer.DAO.SubjectsDAO">
+              <point x="90.41666666666674" y="-14.5" />
+              <point x="1210.3791291291295" y="544.0" />
+              <point x="1376.3791291291293" y="544.0" />
+              <point x="-32.25" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Services.StudentService" target="DataAccessLayer.DAO.StudentEnrollmentDAO">
+              <point x="52.875" y="-14.5" />
+              <point x="1285.7280780780782" y="732.0" />
+              <point x="1665.5267857142858" y="732.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Models.AppReportModel" target="BussinessLogicLayer.Models.SubjectsModel">
+              <point x="37.75" y="-14.5" />
+              <point x="1285.3791291291293" y="455.0" />
+              <point x="1282.9044776919777" y="455.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Models.AppUsersModel" target="BussinessLogicLayer.Models.AppUserRolesModel">
+              <point x="-62.571428571428555" y="-14.5" />
+              <point x="565.0566495066496" y="366.0" />
+              <point x="48.5" y="366.0" />
+              <point x="48.5" y="277.0" />
+              <point x="64.5" y="277.0" />
+              <point x="-21.5" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Models.YearOfStudySubjectsModel" target="BussinessLogicLayer.Models.SubjectsModel">
+              <point x="18.083333333333258" y="-14.5" />
+              <point x="1138.045795795796" y="544.0" />
+              <point x="1150.6291291291293" y="544.0" />
+              <point x="1150.6291291291293" y="435.0" />
+              <point x="1223.7616205491206" y="435.0" />
+              <point x="-59.14285714285711" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.GroupDAO" target="BussinessLogicLayer.Models.GroupModel">
+              <point x="0.0" y="-14.5" />
+              <point x="1742.7767857142858" y="445.0" />
+              <point x="1643.4396342771345" y="445.0" />
+              <point x="49.59999999999991" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.AppUserRolesDao" target="DataAccessLayer.Connection.ConnectionFactory">
+              <point x="53.0" y="-14.5" />
+              <point x="300.7637548262552" y="267.0" />
+              <point x="411.08333333333326" y="267.0" />
+              <point x="411.08333333333326" y="79.0" />
+              <point x="934.670795795796" y="79.0" />
+              <point x="-48.125" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.YearOfStudySubjectsDAO" target="DataAccessLayer.Connection.ConnectionFactory">
+              <point x="69.33333333333326" y="-14.5" />
+              <point x="1258.256300943801" y="618.0" />
+              <point x="1483.6291291291293" y="618.0" />
+              <point x="1483.6291291291293" y="89.0" />
+              <point x="1017.170795795796" y="89.0" />
+              <point x="34.375" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Services.StudentService" target="BussinessLogicLayer.Models.StudentEnrollmentModel">
+              <point x="41.125" y="-14.5" />
+              <point x="1273.9780780780782" y="722.0" />
+              <point x="1536.7614114114115" y="722.0" />
+              <point x="1536.7614114114115" y="618.0" />
+              <point x="1538.4624624624626" y="618.0" />
+              <point x="-66.66666666666674" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Models.UserProfileModel" target="DataAccessLayer.DAO.AppUsersDAO">
+              <point x="-21.85714285714289" y="14.5" />
+              <point x="577.4691119691123" y="277.0" />
+              <point x="544.1280780780781" y="277.0" />
+              <point x="544.1280780780781" y="445.0" />
+              <point x="558.3707957957961" y="445.0" />
+              <point x="-51.375" y="-14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.AppUserRolesDao" target="BussinessLogicLayer.Models.AppUserRolesModel">
+              <point x="0.0" y="-14.5" />
+              <point x="247.7637548262552" y="267.0" />
+              <point x="150.5" y="267.0" />
+              <point x="64.5" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Models.StudentEnrollmentModel" target="DataAccessLayer.DAO.GroupDAO">
+              <point x="66.66666666666674" y="-14.5" />
+              <point x="1671.795795795796" y="544.0" />
+              <point x="1714.0267857142858" y="544.0" />
+              <point x="-28.75" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Services.GradingService" target="BussinessLogicLayer.Models.StudentGradesModel">
+              <point x="35.25" y="-14.5" />
+              <point x="1976.2767857142858" y="183.0" />
+              <point x="2000.7767857142858" y="183.0" />
+              <point x="2000.7767857142858" y="109.0" />
+              <point x="2022.9434523809523" y="109.0" />
+              <point x="59.33333333333326" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.StudentEnrollmentDAO" target="DataAccessLayer.Connection.ConnectionFactory">
+              <point x="63.66666666666674" y="-14.5" />
+              <point x="1729.1934523809523" y="618.0" />
+              <point x="1810.7767857142858" y="618.0" />
+              <point x="1810.7767857142858" y="69.0" />
+              <point x="1044.670795795796" y="69.0" />
+              <point x="61.875" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.AppRolesDAO" target="BussinessLogicLayer.Models.AppRolesModel">
+              <point x="0.0" y="-14.5" />
+              <point x="140.33333333333326" y="109.0" />
+              <point x="146.70833333333326" y="109.0" />
+              <point x="53.625" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.StudentProfileDao" target="BussinessLogicLayer.Models.StudentProfileModel">
+              <point x="0.0" y="-14.5" />
+              <point x="317.02083333333326" y="49.0" />
+              <point x="333.60416666666663" y="49.0" />
+              <point x="43.25" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Models.AppUsersModel" target="DataAccessLayer.DAO.AppUserRolesDao">
+              <point x="-41.71428571428578" y="-14.5" />
+              <point x="585.9137923637924" y="356.0" />
+              <point x="287.5137548262552" y="356.0" />
+              <point x="39.75" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Services.StudentService" target="DataAccessLayer.DAO.StudentsDao">
+              <point x="-52.875" y="-14.5" />
+              <point x="1179.9780780780782" y="732.0" />
+              <point x="728.4624624624627" y="732.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.UserProfileDAO" target="DataAccessLayer.Connection.ConnectionFactory">
+              <point x="-48.0" y="-14.5" />
+              <point x="413.62807807807815" y="277.0" />
+              <point x="451.83333333333326" y="277.0" />
+              <point x="451.83333333333326" y="89.0" />
+              <point x="948.420795795796" y="89.0" />
+              <point x="-34.375" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.AppUsersDAO" target="BussinessLogicLayer.Models.AppUsersModel">
+              <point x="-17.125" y="-14.5" />
+              <point x="592.6207957957961" y="455.0" />
+              <point x="598.4280780780781" y="455.0" />
+              <point x="-29.200000000000045" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Services.AppUserService" target="DataAccessLayer.DAO.AppUsersDAO">
+              <point x="58.39999999999998" y="-14.5" />
+              <point x="484.0280780780781" y="544.0" />
+              <point x="575.4957957957961" y="544.0" />
+              <point x="-34.25" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Services.StudentService" target="BussinessLogicLayer.Models.SubjectsModel">
+              <point x="5.875" y="-14.5" />
+              <point x="1238.7280780780782" y="692.0" />
+              <point x="1333.6291291291293" y="692.0" />
+              <point x="1333.6291291291293" y="455.0" />
+              <point x="1302.6187634062635" y="455.0" />
+              <point x="19.71428571428578" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Models.AppUsersModel" target="BussinessLogicLayer.Models.UserProfileModel">
+              <point x="41.714285714285666" y="-14.5" />
+              <point x="669.3423637923638" y="366.0" />
+              <point x="656.547619047619" y="366.0" />
+              <point x="656.547619047619" y="257.0" />
+              <point x="643.0405405405409" y="257.0" />
+              <point x="43.714285714285666" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.StudentsDao" target="BussinessLogicLayer.Models.StudentsModel">
+              <point x="-42.66666666666663" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.StudentProfileDao" target="DataAccessLayer.Connection.ConnectionFactory">
+              <point x="53.33333333333326" y="-14.5" />
+              <point x="370.3541666666665" y="69.0" />
+              <point x="920.920795795796" y="69.0" />
+              <point x="-61.875" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.SubjectsDAO" target="DataAccessLayer.Connection.ConnectionFactory">
+              <point x="43.0" y="-14.5" />
+              <point x="1451.6291291291293" y="455.0" />
+              <point x="1427.6009062634062" y="455.0" />
+              <point x="1427.6009062634062" y="99.0" />
+              <point x="1003.420795795796" y="99.0" />
+              <point x="20.625" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Services.StudentService" target="BussinessLogicLayer.Models.StudentsModel">
+              <point x="-64.625" y="-14.5" />
+              <point x="1168.2280780780782" y="742.0" />
+              <point x="653.9624624624627" y="742.0" />
+              <point x="653.9624624624627" y="618.0" />
+              <point x="638.795795795796" y="618.0" />
+              <point x="-47.0" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.StudentEnrollmentDAO" target="BussinessLogicLayer.Models.StudentEnrollmentModel">
+              <point x="0.0" y="-14.5" />
+              <point x="1665.5267857142858" y="618.0" />
+              <point x="1671.795795795796" y="618.0" />
+              <point x="66.66666666666674" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Models.StudentsModel" target="BussinessLogicLayer.Models.AppUsersModel">
+              <point x="0.0" y="-14.5" />
+              <point x="685.795795795796" y="544.0" />
+              <point x="702.670795795796" y="544.0" />
+              <point x="702.670795795796" y="445.0" />
+              <point x="656.8280780780782" y="445.0" />
+              <point x="29.200000000000045" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Services.AppUserService" target="DataAccessLayer.DAO.UserProfileDAO">
+              <point x="0.0" y="-14.5" />
+              <point x="-36.0" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Models.AppUserRolesModel" target="DataAccessLayer.DAO.AppRolesDAO">
+              <point x="57.333333333333314" y="-14.5" />
+              <point x="143.33333333333326" y="183.0" />
+              <point x="140.33333333333326" y="183.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Services.StudentService" target="DataAccessLayer.DAO.YearOfStudySubjectsDAO">
+              <point x="-5.875" y="-14.5" />
+              <point x="1226.9780780780782" y="692.0" />
+              <point x="1188.9229676104678" y="692.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.AppUsersDAO" target="DataAccessLayer.Connection.ConnectionFactory">
+              <point x="51.375" y="-14.5" />
+              <point x="661.1207957957961" y="455.0" />
+              <point x="711.1280780780781" y="455.0" />
+              <point x="711.1280780780781" y="99.0" />
+              <point x="962.170795795796" y="99.0" />
+              <point x="-20.625" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Models.YearOfStudySubjectsModel" target="BussinessLogicLayer.Models.YearOfStudyModel">
+              <point x="-90.41666666666674" y="-14.5" />
+              <point x="1029.545795795796" y="544.0" />
+              <point x="813.9624624624627" y="544.0" />
+              <point x="813.9624624624627" y="445.0" />
+              <point x="792.1624624624627" y="445.0" />
+              <point x="-32.799999999999955" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Services.StudentService" target="DataAccessLayer.DAO.GroupDAO">
+              <point x="64.625" y="-14.5" />
+              <point x="1297.4780780780782" y="742.0" />
+              <point x="1771.5267857142858" y="742.0" />
+              <point x="28.75" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Services.StudentService" target="BussinessLogicLayer.Models.YearOfStudySubjectsModel">
+              <point x="-17.625" y="-14.5" />
+              <point x="1215.2280780780782" y="702.0" />
+              <point x="1052.030421492922" y="702.0" />
+              <point x="1052.030421492922" y="618.0" />
+              <point x="1047.6291291291295" y="618.0" />
+              <point x="-72.33333333333326" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.GroupDAO" target="DataAccessLayer.Connection.ConnectionFactory">
+              <point x="38.33333333333326" y="-14.5" />
+              <point x="1781.1101190476188" y="455.0" />
+              <point x="1760.6842395967396" y="455.0" />
+              <point x="1760.6842395967396" y="79.0" />
+              <point x="1030.920795795796" y="79.0" />
+              <point x="48.125" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.StudentsDao" target="DataAccessLayer.Connection.ConnectionFactory">
+              <point x="42.66666666666663" y="-14.5" />
+              <point x="771.1291291291293" y="618.0" />
+              <point x="1000.9624624624627" y="618.0" />
+              <point x="1000.9624624624627" y="109.0" />
+              <point x="989.670795795796" y="109.0" />
+              <point x="6.875" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Services.StudentService" target="DataAccessLayer.DAO.YearOfStudyDAO">
+              <point x="-29.375" y="-14.5" />
+              <point x="1203.4780780780782" y="712.0" />
+              <point x="874.2124624624627" y="712.0" />
+              <point x="-38.75" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Services.AppUserService" target="BussinessLogicLayer.Models.AppUserRolesModel">
+              <point x="-58.39999999999998" y="-14.5" />
+              <point x="367.22807807807817" y="544.0" />
+              <point x="37.5" y="544.0" />
+              <point x="37.5" y="277.0" />
+              <point x="21.5" y="277.0" />
+              <point x="-64.5" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Models.StudentEnrollmentModel" target="BussinessLogicLayer.Models.GroupModel">
+              <point x="0.0" y="-14.5" />
+              <point x="1605.1291291291293" y="544.0" />
+              <point x="1580.8637548262552" y="544.0" />
+              <point x="1580.8637548262552" y="455.0" />
+              <point x="1593.8396342771346" y="455.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Services.StudentService" target="DataAccessLayer.DAO.SubjectsDAO">
+              <point x="17.625" y="-14.5" />
+              <point x="1250.4780780780782" y="702.0" />
+              <point x="1440.8791291291293" y="702.0" />
+              <point x="32.25" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Services.GradingService" target="DataAccessLayer.DAO.StudentGradesDAO">
+              <point x="-35.25" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Services.StudentService" target="BussinessLogicLayer.Models.YearOfStudyModel">
+              <point x="-41.125" y="-14.5" />
+              <point x="1191.7280780780782" y="722.0" />
+              <point x="802.9624624624627" y="722.0" />
+              <point x="802.9624624624627" y="455.0" />
+              <point x="759.3624624624626" y="455.0" />
+              <point x="-65.60000000000002" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Services.AppUserService" target="BussinessLogicLayer.Models.AppUsersModel">
+              <point x="29.199999999999932" y="-14.5" />
+              <point x="454.8280780780781" y="534.0" />
+              <point x="508.808295795796" y="534.0" />
+              <point x="508.808295795796" y="455.0" />
+              <point x="569.2280780780782" y="455.0" />
+              <point x="-58.39999999999998" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Models.StudentsModel" target="DataAccessLayer.DAO.AppUsersDAO">
+              <point x="-47.0" y="-14.5" />
+              <point x="638.795795795796" y="544.0" />
+              <point x="643.9957957957961" y="544.0" />
+              <point x="34.25" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.StudentGradesDAO" target="BussinessLogicLayer.Models.StudentGradesModel">
+              <point x="56.33333333333326" y="-14.5" />
+              <point x="1962.1101190476188" y="109.0" />
+              <point x="1963.6101190476188" y="109.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.SubjectsDAO" target="BussinessLogicLayer.Models.SubjectsModel">
+              <point x="0.0" y="-14.5" />
+              <point x="1408.6291291291293" y="435.0" />
+              <point x="1342.0473348348348" y="435.0" />
+              <point x="59.14285714285711" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Services.StudentService" target="BussinessLogicLayer.Models.GroupModel">
+              <point x="29.375" y="-14.5" />
+              <point x="1262.2280780780782" y="712.0" />
+              <point x="1494.6291291291293" y="712.0" />
+              <point x="1494.6291291291293" y="445.0" />
+              <point x="1544.2396342771347" y="445.0" />
+              <point x="-49.59999999999991" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.AppRolesDAO" target="DataAccessLayer.Connection.ConnectionFactory">
+              <point x="44.66666666666666" y="-14.5" />
+              <point x="184.9999999999999" y="59.0" />
+              <point x="907.170795795796" y="59.0" />
+              <point x="-75.625" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Models.UserProfileModel" target="BussinessLogicLayer.Models.AppUsersModel">
+              <point x="0.0" y="14.5" />
+              <point x="599.3262548262552" y="277.0" />
+              <point x="627.6280780780781" y="277.0" />
+              <point x="0.0" y="-14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Models.YearOfStudySubjectsModel" target="DataAccessLayer.DAO.YearOfStudyDAO">
+              <point x="-18.083333333333258" y="-14.5" />
+              <point x="1101.8791291291295" y="524.0" />
+              <point x="951.7124624624627" y="524.0" />
+              <point x="38.75" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.YearOfStudyDAO" target="BussinessLogicLayer.Models.YearOfStudyModel">
+              <point x="0.0" y="-14.5" />
+              <point x="912.9624624624627" y="455.0" />
+              <point x="890.5624624624627" y="455.0" />
+              <point x="65.60000000000002" y="14.5" />
+            </edge>
+            <edge source="DataAccessLayer.DAO.StudentGradesDAO" target="DataAccessLayer.Connection.ConnectionFactory">
+              <point x="-56.33333333333326" y="-14.5" />
+              <point x="1849.4434523809523" y="59.0" />
+              <point x="1058.420795795796" y="59.0" />
+              <point x="75.625" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Models.AppUserRolesModel" target="BussinessLogicLayer.Models.AppRolesModel">
+              <point x="-57.33333333333337" y="-14.5" />
+              <point x="28.66666666666663" y="183.0" />
+              <point x="51.83333333333326" y="183.0" />
+              <point x="51.83333333333326" y="109.0" />
+              <point x="39.45833333333326" y="109.0" />
+              <point x="-53.625" y="14.5" />
+            </edge>
+            <edge source="BussinessLogicLayer.Models.AppUsersModel" target="DataAccessLayer.DAO.UserProfileDAO">
+              <point x="-20.85714285714289" y="-14.5" />
+              <point x="606.7709352209353" y="346.0" />
+              <point x="497.62807807807815" y="346.0" />
+              <point x="36.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.4655089242643512" x="1027.0" y="433.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="" y="">PresentationLayer.Controllers.StudentGradesController</node>
+            <node x="" y="">BussinessLogicLayer.Models.AppUserRolesModel</node>
+            <node x="" y="">BussinessLogicLayer.Services.AppUserService</node>
+            <node x="" y="">PresentationLayer.Controllers.StudentDetailController</node>
+            <node x="" y="">BussinessLogicLayer.Models.AppReportModel</node>
+            <node x="" y="">BussinessLogicLayer.Services.StudentService</node>
+            <node x="" y="">PresentationLayer.Controllers.LoginController</node>
+            <node x="" y="">BussinessLogicLayer.Models.YearOfStudySubjectsModel</node>
+            <node x="" y="">BussinessLogicLayer.Models.UserProfileModel</node>
+            <node x="" y="">DataAccessLayer.DAO.AppRolesDAO</node>
+            <node x="" y="">BussinessLogicLayer.Models.AppUsersModel</node>
+            <node x="" y="">BussinessLogicLayer.Services.GradingService</node>
+            <node x="" y="">BussinessLogicLayer.Models.StudentGradesModel</node>
+            <node x="" y="">DataAccessLayer.DAO.YearOfStudyDAO</node>
+            <node x="" y="">BussinessLogicLayer.Models.SubjectsModel</node>
+            <node x="" y="">DataAccessLayer.DAO.StudentProfileDao</node>
+            <node x="" y="">BussinessLogicLayer.Models.YearOfStudyModel</node>
+            <node x="" y="">BussinessLogicLayer.Models.StudentEnrollmentModel</node>
+            <node x="" y="">PresentationLayer.Validators</node>
+            <node x="" y="">DataAccessLayer.DAO.StudentsDao</node>
+            <node x="" y="">BussinessLogicLayer.Models.StudentProfileModel</node>
+            <node x="" y="">DataAccessLayer.DAO.AppUserRolesDao</node>
+            <node x="" y="">DataAccessLayer.DAO.UserProfileDAO</node>
+            <node x="" y="">DataAccessLayer.DAO.YearOfStudySubjectsDAO</node>
+            <node x="" y="">DataAccessLayer.DAO.StudentGradesDAO</node>
+            <node x="" y="">BussinessLogicLayer.Models.AppRolesModel</node>
+            <node x="" y="">PresentationLayer.Controllers.MainController</node>
+            <node x="" y="">BussinessLogicLayer.Models.StudentsModel</node>
+            <node x="" y="">PresentationLayer.Controllers.AddStudentController</node>
+            <node x="" y="">DataAccessLayer.Connection.ConnectionFactory</node>
+            <node x="" y="">DataAccessLayer.DAO.SubjectsDAO</node>
+            <node x="" y="">DataAccessLayer.DAO.GroupDAO</node>
+            <node x="" y="">DataAccessLayer.DAO.StudentEnrollmentDAO</node>
+            <node x="" y="">BussinessLogicLayer.Models.GroupModel</node>
+            <node x="" y="">DataAccessLayer.DAO.AppUsersDAO</node>
+            <node x="" y="">Testing.TestSuite</node>
+            <node x="" y="">PresentationLayer.Main</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.6065573770491803" x="1222.0" y="692.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>

@@ -1,636 +1,370 @@
-CREATE TABLE AppUsers
+USE [StudentsDB]
+GO
+/****** Object:  Table [dbo].[AppRoles]    Script Date: 10/04/2018 17:41:54 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[AppRoles](
+	[RoleId] [int] IDENTITY(1,1) NOT NULL,
+	[RoleName] [nvarchar](max) NOT NULL,
+ CONSTRAINT [PK_AppRoles] PRIMARY KEY CLUSTERED 
 (
-  UserId       NVARCHAR(128) NOT NULL
-    CONSTRAINT PK_AppUsers
-    PRIMARY KEY,
-  UserName     NVARCHAR(256) NOT NULL,
-  PasswordHash NVARCHAR(MAX) NOT NULL,
-  Email        NVARCHAR(256) NOT NULL
-)
+	[RoleId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-
-CREATE TABLE sysdiagrams
+/****** Object:  Table [dbo].[AppUserRoles]    Script Date: 10/04/2018 17:41:54 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[AppUserRoles](
+	[RoleId] [int] NOT NULL,
+	[UserId] [nvarchar](128) NOT NULL,
+ CONSTRAINT [PK_AppUserRoles] PRIMARY KEY CLUSTERED 
 (
-  name         SYSNAME NOT NULL,
-  principal_id INT     NOT NULL,
-  diagram_id   INT IDENTITY
-    PRIMARY KEY,
-  version      INT,
-  definition   VARBINARY(MAX),
-  CONSTRAINT UK_principal_name
-  UNIQUE (principal_id, name)
-)
+	[RoleId] ASC,
+	[UserId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
 GO
-
-CREATE TABLE AppRoles
+/****** Object:  Table [dbo].[AppUsers]    Script Date: 10/04/2018 17:41:54 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[AppUsers](
+	[UserId] [nvarchar](128) NOT NULL,
+	[UserName] [nvarchar](256) NOT NULL,
+	[PasswordHash] [nvarchar](max) NOT NULL,
+	[Email] [nvarchar](256) NOT NULL,
+ CONSTRAINT [PK_AppUsers] PRIMARY KEY CLUSTERED 
 (
-  RoleId   INT IDENTITY
-    CONSTRAINT PK_AppRoles
-    PRIMARY KEY,
-  RoleName NCHAR(20) NOT NULL
-)
+	[UserId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-
-CREATE TABLE AppUserRoles
+/****** Object:  Table [dbo].[Group]    Script Date: 10/04/2018 17:41:54 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Group](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[YearOfStudyId] [int] NOT NULL,
+	[GroupName] [nvarchar](128) NOT NULL,
+	[Description] [nvarchar](128) NULL,
+	[IsActive] [bit] NOT NULL,
+ CONSTRAINT [PK_Group] PRIMARY KEY CLUSTERED 
 (
-  RoleId INT           NOT NULL
-    CONSTRAINT FK_AppUserRoles_AppRoles
-    REFERENCES AppRoles,
-  UserId NVARCHAR(128) NOT NULL
-    CONSTRAINT FK_AppUserRoles_AppUsers
-    REFERENCES AppUsers,
-  CONSTRAINT PK_AppUserRoles
-  PRIMARY KEY (RoleId, UserId)
-)
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
 GO
-
-CREATE TABLE UserProfile
+/****** Object:  Table [dbo].[StudentEnrollment]    Script Date: 10/04/2018 17:41:54 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[StudentEnrollment](
+	[StudentId] [int] NOT NULL,
+	[GroupId] [int] NOT NULL,
+ CONSTRAINT [PK_StudentEnrollment] PRIMARY KEY CLUSTERED 
 (
-  UserId  NVARCHAR(128) NOT NULL
-    CONSTRAINT PK_UserProfile
-    PRIMARY KEY
-    CONSTRAINT FK_UserProfile_AppUsers
-    REFERENCES AppUsers,
-  Name    NVARCHAR(128) NOT NULL,
-  Surname NVARCHAR(128) NOT NULL,
-  MidName NVARCHAR(128)
-)
+	[StudentId] ASC,
+	[GroupId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
 GO
-
-CREATE TABLE Students
+/****** Object:  Table [dbo].[StudentGrades]    Script Date: 10/04/2018 17:41:54 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[StudentGrades](
+	[StudentId] [int] NOT NULL,
+	[SubjectId] [int] NOT NULL,
+	[Grade] [real] NULL,
+ CONSTRAINT [PK_StudentGrades] PRIMARY KEY CLUSTERED 
 (
-  UserId    NVARCHAR(128) NOT NULL
-    CONSTRAINT PK_Students
-    PRIMARY KEY
-    CONSTRAINT FK_Students_AppUsers
-    REFERENCES AppUsers,
-  StudentId INT IDENTITY
-)
+	[StudentId] ASC,
+	[SubjectId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
 GO
-
-CREATE UNIQUE INDEX IX_Students
-  ON Students (StudentId)
+/****** Object:  Table [dbo].[StudentProfile]    Script Date: 10/04/2018 17:41:54 ******/
+SET ANSI_NULLS ON
 GO
-
-CREATE TABLE StudentProfile
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[StudentProfile](
+	[StudentId] [int] NOT NULL,
+ CONSTRAINT [PK_StudentProfile] PRIMARY KEY CLUSTERED 
 (
-  StudentId INT NOT NULL
-    CONSTRAINT PK_StudentProfile
-    PRIMARY KEY
-)
+	[StudentId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
 GO
-
-ALTER TABLE Students
-  ADD CONSTRAINT FK_Students_StudentProfile
-FOREIGN KEY (StudentId) REFERENCES StudentProfile
+/****** Object:  Table [dbo].[Students]    Script Date: 10/04/2018 17:41:54 ******/
+SET ANSI_NULLS ON
 GO
-
-CREATE TABLE YearOfStudy
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Students](
+	[UserId] [nvarchar](128) NOT NULL,
+	[StudentId] [int] IDENTITY(1,1) NOT NULL,
+ CONSTRAINT [PK_Students] PRIMARY KEY CLUSTERED 
 (
-  Id          INT IDENTITY
-    CONSTRAINT PK_YearOfStudy
-    PRIMARY KEY,
-  YearName    NVARCHAR(128) NOT NULL,
-  Description NVARCHAR(MAX)
-)
+	[UserId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
 GO
-
-CREATE TABLE Subjects
+/****** Object:  Table [dbo].[Subjects]    Script Date: 10/04/2018 17:41:54 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Subjects](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[SubjectName] [nvarchar](128) NOT NULL,
+	[Description] [nvarchar](128) NULL,
+ CONSTRAINT [PK_Subjects] PRIMARY KEY CLUSTERED 
 (
-  Id          INT IDENTITY
-    CONSTRAINT PK_Subjects
-    PRIMARY KEY,
-  SubjectName NVARCHAR(128) NOT NULL,
-  YearOfStudy INT           NOT NULL,
-  Description NVARCHAR(128)
-)
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
 GO
-
-CREATE TABLE YearOfStudySubjects
+/****** Object:  Table [dbo].[UserProfile]    Script Date: 10/04/2018 17:41:55 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[UserProfile](
+	[UserId] [nvarchar](128) NOT NULL,
+	[Name] [nvarchar](128) NOT NULL,
+	[Surname] [nvarchar](128) NOT NULL,
+	[MidName] [nvarchar](128) NULL,
+	[Phone] [nvarchar](50) NOT NULL,
+	[Nationality] [nvarchar](50) NOT NULL,
+	[Country] [nvarchar](50) NOT NULL,
+	[County] [nvarchar](50) NULL,
+	[Address] [nvarchar](50) NOT NULL,
+	[ZIP] [nvarchar](20) NOT NULL,
+ CONSTRAINT [PK_UserProfile] PRIMARY KEY CLUSTERED 
 (
-  SubjectId     INT NOT NULL
-    CONSTRAINT FK_YearOfStudySubjects_Subjects
-    REFERENCES Subjects,
-  YearOfStudyId INT NOT NULL
-    CONSTRAINT FK_YearOfStudySubjects_YearOfStudy
-    REFERENCES YearOfStudy,
-  CONSTRAINT PK_YearOfStudySubjects
-  PRIMARY KEY (SubjectId, YearOfStudyId)
-)
+	[UserId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
 GO
-
-CREATE TABLE StudentEnrollment
+/****** Object:  Table [dbo].[YearOfStudy]    Script Date: 10/04/2018 17:41:55 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[YearOfStudy](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[YearName] [nvarchar](128) NOT NULL,
+	[Description] [nvarchar](max) NULL,
+ CONSTRAINT [PK_YearOfStudy] PRIMARY KEY CLUSTERED 
 (
-  StudentId INT NOT NULL
-    CONSTRAINT FK_StudentEnrollment_Students
-    REFERENCES Students (StudentId),
-  GroupId   INT NOT NULL,
-  CONSTRAINT PK_StudentEnrollment
-  PRIMARY KEY (StudentId, GroupId)
-)
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-
-CREATE TABLE Group
+/****** Object:  Table [dbo].[YearOfStudySubjects]    Script Date: 10/04/2018 17:41:55 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[YearOfStudySubjects](
+	[SubjectId] [int] NOT NULL,
+	[YearOfStudyId] [int] NOT NULL,
+ CONSTRAINT [PK_YearOfStudySubjects] PRIMARY KEY CLUSTERED 
 (
-  Id            INT IDENTITY
-    CONSTRAINT PK_Group
-    PRIMARY KEY,
-  YearOfStudyId INT           NOT NULL
-    CONSTRAINT FK_Group_YearOfStudy
-    REFERENCES YearOfStudy,
-  GroupName     NVARCHAR(128) NOT NULL,
-  Description   NVARCHAR(128),
-  IsActive      BIT           NOT NULL
-)
+	[SubjectId] ASC,
+	[YearOfStudyId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
 GO
-
-ALTER TABLE StudentEnrollment
-  ADD CONSTRAINT FK_StudentEnrollment_Group
-FOREIGN KEY (GroupId) REFERENCES Group
+SET IDENTITY_INSERT [dbo].[AppRoles] ON 
 GO
-
-CREATE TABLE StudentGrades
-(
-  StudentId INT NOT NULL
-    CONSTRAINT FK_StudentGrades_Students
-    REFERENCES Students (StudentId),
-  SubjectId INT NOT NULL
-    CONSTRAINT FK_StudentGrades_Subjects
-    REFERENCES Subjects,
-  Grade     REAL,
-  CONSTRAINT PK_StudentGrades
-  PRIMARY KEY (StudentId, SubjectId)
-)
+INSERT [dbo].[AppRoles] ([RoleId], [RoleName]) VALUES (1, N'teacher ')
 GO
-
-
-CREATE PROCEDURE dbo.sp_upgraddiagrams
-AS
-  BEGIN
-    IF OBJECT_ID(N'dbo.sysdiagrams') IS NOT NULL
-      RETURN 0;
-
-    CREATE TABLE dbo.sysdiagrams
-    (
-      name         SYSNAME NOT NULL,
-      principal_id INT     NOT NULL, -- we may change it to varbinary(85)
-      diagram_id   INT PRIMARY KEY IDENTITY,
-      version      INT,
-
-      definition   VARBINARY(MAX)
-        CONSTRAINT UK_principal_name UNIQUE
-          (
-            principal_id,
-            name
-          )
-    );
-
-
-    /* Add this if we need to have some form of extended properties for diagrams */
-    /*
-    IF OBJECT_ID(N'dbo.sysdiagram_properties') IS NULL
-    BEGIN
-      CREATE TABLE dbo.sysdiagram_properties
-      (
-        diagram_id int,
-        name sysname,
-        value varbinary(max) NOT NULL
-      )
-    END
-    */
-
-    IF OBJECT_ID(N'dbo.dtproperties') IS NOT NULL
-      BEGIN
-        INSERT INTO dbo.sysdiagrams
-        (
-          [name],
-          [principal_id],
-          [version],
-          [definition]
-        )
-          SELECT
-            convert(SYSNAME, dgnm.[uvalue]),
-            DATABASE_PRINCIPAL_ID(N'dbo'),
-            -- will change to the sid of sa
-            0,
-            -- zero for old format, dgdef.[version],
-            dgdef.[lvalue]
-          FROM dbo.[dtproperties] dgnm
-            INNER JOIN dbo.[dtproperties] dggd
-              ON dggd.[property] = 'DtgSchemaGUID' AND dggd.[objectid] = dgnm.[objectid]
-            INNER JOIN dbo.[dtproperties] dgdef
-              ON dgdef.[property] = 'DtgSchemaDATA' AND dgdef.[objectid] = dgnm.[objectid]
-
-          WHERE dgnm.[property] = 'DtgSchemaNAME' AND dggd.[uvalue] LIKE N'_EA3E6268-D998-11CE-9454-00AA00A3F36E_'
-        RETURN 2;
-      END
-    RETURN 1;
-  END
-
-
+INSERT [dbo].[AppRoles] ([RoleId], [RoleName]) VALUES (2, N'student')
 GO
-
-
-CREATE PROCEDURE dbo.sp_helpdiagrams
-  (
-    @diagramname SYSNAME = NULL,
-    @owner_id    INT = NULL
-  )
-  WITH EXECUTE AS N'dbo'
-AS
-  BEGIN
-    DECLARE @user SYSNAME
-    DECLARE @dboLogin BIT
-    EXECUTE AS CALLER;
-    SET @user = USER_NAME();
-    SET @dboLogin = CONVERT(BIT, IS_MEMBER('db_owner'));
-    REVERT;
-    SELECT
-        [Database] = DB_NAME(),
-        [Name] = name,
-        [ID] = diagram_id,
-        [Owner] = USER_NAME(principal_id),
-        [OwnerID] = principal_id
-    FROM
-      sysdiagrams
-    WHERE
-      (@dboLogin = 1 OR USER_NAME(principal_id) = @user) AND
-      (@diagramname IS NULL OR name = @diagramname) AND
-      (@owner_id IS NULL OR principal_id = @owner_id)
-    ORDER BY
-      4, 5, 1
-  END
-
-
+SET IDENTITY_INSERT [dbo].[AppRoles] OFF
 GO
-
-
-CREATE PROCEDURE dbo.sp_helpdiagramdefinition
-  (
-    @diagramname SYSNAME,
-    @owner_id    INT = NULL
-  )
-  WITH EXECUTE AS N'dbo'
-AS
-  BEGIN
-    SET NOCOUNT ON
-
-    DECLARE @theId INT
-    DECLARE @IsDbo INT
-    DECLARE @DiagId INT
-    DECLARE @UIDFound INT
-
-    IF (@diagramname IS NULL)
-      BEGIN
-        RAISERROR (N'E_INVALIDARG', 16, 1);
-        RETURN -1
-      END
-
-    EXECUTE AS CALLER;
-    SELECT @theId = DATABASE_PRINCIPAL_ID();
-    SELECT @IsDbo = IS_MEMBER(N'db_owner');
-    IF (@owner_id IS NULL)
-      SELECT @owner_id = @theId;
-    REVERT;
-
-    SELECT
-      @DiagId = diagram_id,
-      @UIDFound = principal_id
-    FROM dbo.sysdiagrams
-    WHERE principal_id = @owner_id AND name = @diagramname;
-    IF (@DiagId IS NULL OR (@IsDbo = 0 AND @UIDFound <> @theId))
-      BEGIN
-        RAISERROR ('Diagram does not exist or you do not have permission.', 16, 1);
-        RETURN -3
-      END
-
-    SELECT
-      version,
-      definition
-    FROM dbo.sysdiagrams
-    WHERE diagram_id = @DiagId;
-    RETURN 0
-  END
-
-
+INSERT [dbo].[AppUserRoles] ([RoleId], [UserId]) VALUES (1, N'1d71d0b5-5549-47e4-9d36-c76baa24812e')
 GO
-
-
-CREATE PROCEDURE dbo.sp_creatediagram
-  (
-    @diagramname SYSNAME,
-    @owner_id    INT = NULL,
-    @version     INT,
-    @definition  VARBINARY(MAX)
-  )
-  WITH EXECUTE AS 'dbo'
-AS
-  BEGIN
-    SET NOCOUNT ON
-
-    DECLARE @theId INT
-    DECLARE @retval INT
-    DECLARE @IsDbo INT
-    DECLARE @userName SYSNAME
-    IF (@version IS NULL OR @diagramname IS NULL)
-      BEGIN
-        RAISERROR (N'E_INVALIDARG', 16, 1);
-        RETURN -1
-      END
-
-    EXECUTE AS CALLER;
-    SELECT @theId = DATABASE_PRINCIPAL_ID();
-    SELECT @IsDbo = IS_MEMBER(N'db_owner');
-    REVERT;
-
-    IF @owner_id IS NULL
-      BEGIN
-        SELECT @owner_id = @theId;
-      END
-    ELSE
-      BEGIN
-        IF @theId <> @owner_id
-          BEGIN
-            IF @IsDbo = 0
-              BEGIN
-                RAISERROR (N'E_INVALIDARG', 16, 1);
-                RETURN -1
-              END
-            SELECT @theId = @owner_id
-          END
-      END
-    -- next 2 line only for test, will be removed after define name unique
-    IF EXISTS(SELECT diagram_id
-              FROM dbo.sysdiagrams
-              WHERE principal_id = @theId AND name = @diagramname)
-      BEGIN
-        RAISERROR ('The name is already used.', 16, 1);
-        RETURN -2
-      END
-
-    INSERT INTO dbo.sysdiagrams (name, principal_id, version, definition)
-    VALUES (@diagramname, @theId, @version, @definition);
-
-    SELECT @retval = @@IDENTITY
-    RETURN @retval
-  END
-
-
+INSERT [dbo].[AppUserRoles] ([RoleId], [UserId]) VALUES (2, N'03e55bfa-3831-408c-8923-b0faa9901e6b')
 GO
-
-
-CREATE PROCEDURE dbo.sp_renamediagram
-  (
-    @diagramname     SYSNAME,
-    @owner_id        INT = NULL,
-    @new_diagramname SYSNAME
-
-  )
-  WITH EXECUTE AS 'dbo'
-AS
-  BEGIN
-    SET NOCOUNT ON
-    DECLARE @theId INT
-    DECLARE @IsDbo INT
-
-    DECLARE @UIDFound INT
-    DECLARE @DiagId INT
-    DECLARE @DiagIdTarg INT
-    DECLARE @u_name SYSNAME
-    IF ((@diagramname IS NULL) OR (@new_diagramname IS NULL))
-      BEGIN
-        RAISERROR ('Invalid value', 16, 1);
-        RETURN -1
-      END
-
-    EXECUTE AS CALLER;
-    SELECT @theId = DATABASE_PRINCIPAL_ID();
-    SELECT @IsDbo = IS_MEMBER(N'db_owner');
-    IF (@owner_id IS NULL)
-      SELECT @owner_id = @theId;
-    REVERT;
-
-    SELECT @u_name = USER_NAME(@owner_id)
-
-    SELECT
-      @DiagId = diagram_id,
-      @UIDFound = principal_id
-    FROM dbo.sysdiagrams
-    WHERE principal_id = @owner_id AND name = @diagramname
-    IF (@DiagId IS NULL OR (@IsDbo = 0 AND @UIDFound <> @theId))
-      BEGIN
-        RAISERROR ('Diagram does not exist or you do not have permission.', 16, 1)
-        RETURN -3
-      END
-
-    -- if((@u_name is not null) and (@new_diagramname = @diagramname))	-- nothing will change
-    --	return 0;
-
-    IF (@u_name IS NULL)
-      SELECT @DiagIdTarg = diagram_id
-      FROM dbo.sysdiagrams
-      WHERE principal_id = @theId AND name = @new_diagramname
-    ELSE
-      SELECT @DiagIdTarg = diagram_id
-      FROM dbo.sysdiagrams
-      WHERE principal_id = @owner_id AND name = @new_diagramname
-
-    IF ((@DiagIdTarg IS NOT NULL) AND @DiagId <> @DiagIdTarg)
-      BEGIN
-        RAISERROR ('The name is already used.', 16, 1);
-        RETURN -2
-      END
-
-    IF (@u_name IS NULL)
-      UPDATE dbo.sysdiagrams
-      SET [name] = @new_diagramname, principal_id = @theId
-      WHERE diagram_id = @DiagId
-    ELSE
-      UPDATE dbo.sysdiagrams
-      SET [name] = @new_diagramname
-      WHERE diagram_id = @DiagId
-    RETURN 0
-  END
-
-
+INSERT [dbo].[AppUserRoles] ([RoleId], [UserId]) VALUES (2, N'06a8eb50-322b-4a26-880c-436c7979645a')
 GO
-
-
-CREATE PROCEDURE dbo.sp_alterdiagram
-  (
-    @diagramname SYSNAME,
-    @owner_id    INT = NULL,
-    @version     INT,
-    @definition  VARBINARY(MAX)
-  )
-  WITH EXECUTE AS 'dbo'
-AS
-  BEGIN
-    SET NOCOUNT ON
-
-    DECLARE @theId INT
-    DECLARE @retval INT
-    DECLARE @IsDbo INT
-
-    DECLARE @UIDFound INT
-    DECLARE @DiagId INT
-    DECLARE @ShouldChangeUID INT
-
-    IF (@diagramname IS NULL)
-      BEGIN
-        RAISERROR ('Invalid ARG', 16, 1)
-        RETURN -1
-      END
-
-    EXECUTE AS CALLER;
-    SELECT @theId = DATABASE_PRINCIPAL_ID();
-    SELECT @IsDbo = IS_MEMBER(N'db_owner');
-    IF (@owner_id IS NULL)
-      SELECT @owner_id = @theId;
-    REVERT;
-
-    SELECT @ShouldChangeUID = 0
-    SELECT
-      @DiagId = diagram_id,
-      @UIDFound = principal_id
-    FROM dbo.sysdiagrams
-    WHERE principal_id = @owner_id AND name = @diagramname
-
-    IF (@DiagId IS NULL OR (@IsDbo = 0 AND @theId <> @UIDFound))
-      BEGIN
-        RAISERROR ('Diagram does not exist or you do not have permission.', 16, 1);
-        RETURN -3
-      END
-
-    IF (@IsDbo <> 0)
-      BEGIN
-        IF (@UIDFound IS NULL OR USER_NAME(@UIDFound) IS NULL) -- invalid principal_id
-          BEGIN
-            SELECT @ShouldChangeUID = 1;
-          END
-      END
-
-    -- update dds data			
-    UPDATE dbo.sysdiagrams
-    SET definition = @definition
-    WHERE diagram_id = @DiagId;
-
-    -- change owner
-    IF (@ShouldChangeUID = 1)
-      UPDATE dbo.sysdiagrams
-      SET principal_id = @theId
-      WHERE diagram_id = @DiagId;
-
-    -- update dds version
-    IF (@version IS NOT NULL)
-      UPDATE dbo.sysdiagrams
-      SET version = @version
-      WHERE diagram_id = @DiagId;
-
-    RETURN 0
-  END
-
-
+INSERT [dbo].[AppUserRoles] ([RoleId], [UserId]) VALUES (2, N'1e68bb71-506d-48ed-9bd4-9787293e012d')
 GO
-
-
-CREATE PROCEDURE dbo.sp_dropdiagram
-  (
-    @diagramname SYSNAME,
-    @owner_id    INT = NULL
-  )
-  WITH EXECUTE AS 'dbo'
-AS
-  BEGIN
-    SET NOCOUNT ON
-    DECLARE @theId INT
-    DECLARE @IsDbo INT
-
-    DECLARE @UIDFound INT
-    DECLARE @DiagId INT
-
-    IF (@diagramname IS NULL)
-      BEGIN
-        RAISERROR ('Invalid value', 16, 1);
-        RETURN -1
-      END
-
-    EXECUTE AS CALLER;
-    SELECT @theId = DATABASE_PRINCIPAL_ID();
-    SELECT @IsDbo = IS_MEMBER(N'db_owner');
-    IF (@owner_id IS NULL)
-      SELECT @owner_id = @theId;
-    REVERT;
-
-    SELECT
-      @DiagId = diagram_id,
-      @UIDFound = principal_id
-    FROM dbo.sysdiagrams
-    WHERE principal_id = @owner_id AND name = @diagramname
-    IF (@DiagId IS NULL OR (@IsDbo = 0 AND @UIDFound <> @theId))
-      BEGIN
-        RAISERROR ('Diagram does not exist or you do not have permission.', 16, 1)
-        RETURN -3
-      END
-
-    DELETE FROM dbo.sysdiagrams
-    WHERE diagram_id = @DiagId;
-
-    RETURN 0;
-  END
-
-
+INSERT [dbo].[AppUserRoles] ([RoleId], [UserId]) VALUES (2, N'3ad5a243-93e8-4cef-8104-1417c2811c78')
 GO
-
-
-CREATE FUNCTION dbo.fn_diagramobjects()
-  RETURNS INT
-  WITH EXECUTE AS N'dbo'
-AS
-  BEGIN
-    DECLARE @id_upgraddiagrams INT
-    DECLARE @id_sysdiagrams INT
-    DECLARE @id_helpdiagrams INT
-    DECLARE @id_helpdiagramdefinition INT
-    DECLARE @id_creatediagram INT
-    DECLARE @id_renamediagram INT
-    DECLARE @id_alterdiagram INT
-    DECLARE @id_dropdiagram INT
-    DECLARE @InstalledObjects INT
-
-    SELECT @InstalledObjects = 0
-
-    SELECT
-      @id_upgraddiagrams = object_id(N'dbo.sp_upgraddiagrams'),
-      @id_sysdiagrams = object_id(N'dbo.sysdiagrams'),
-      @id_helpdiagrams = object_id(N'dbo.sp_helpdiagrams'),
-      @id_helpdiagramdefinition = object_id(N'dbo.sp_helpdiagramdefinition'),
-      @id_creatediagram = object_id(N'dbo.sp_creatediagram'),
-      @id_renamediagram = object_id(N'dbo.sp_renamediagram'),
-      @id_alterdiagram = object_id(N'dbo.sp_alterdiagram'),
-      @id_dropdiagram = object_id(N'dbo.sp_dropdiagram')
-
-    IF @id_upgraddiagrams IS NOT NULL
-      SELECT @InstalledObjects = @InstalledObjects + 1
-    IF @id_sysdiagrams IS NOT NULL
-      SELECT @InstalledObjects = @InstalledObjects + 2
-    IF @id_helpdiagrams IS NOT NULL
-      SELECT @InstalledObjects = @InstalledObjects + 4
-    IF @id_helpdiagramdefinition IS NOT NULL
-      SELECT @InstalledObjects = @InstalledObjects + 8
-    IF @id_creatediagram IS NOT NULL
-      SELECT @InstalledObjects = @InstalledObjects + 16
-    IF @id_renamediagram IS NOT NULL
-      SELECT @InstalledObjects = @InstalledObjects + 32
-    IF @id_alterdiagram IS NOT NULL
-      SELECT @InstalledObjects = @InstalledObjects + 64
-    IF @id_dropdiagram IS NOT NULL
-      SELECT @InstalledObjects = @InstalledObjects + 128
-
-    RETURN @InstalledObjects
-  END
-
-
+INSERT [dbo].[AppUserRoles] ([RoleId], [UserId]) VALUES (2, N'9fc2cb5f-bee8-44c2-939c-1d4ddd0fc5d6')
 GO
-
-
+INSERT [dbo].[AppUserRoles] ([RoleId], [UserId]) VALUES (2, N'd8f0b9fe-f591-40b0-bd35-01a45f310538')
+GO
+INSERT [dbo].[AppUsers] ([UserId], [UserName], [PasswordHash], [Email]) VALUES (N'03e55bfa-3831-408c-8923-b0faa9901e6b', N'craciunsergiu', N'qwerty123', N'craciunsergiu@gmail.com')
+GO
+INSERT [dbo].[AppUsers] ([UserId], [UserName], [PasswordHash], [Email]) VALUES (N'06a8eb50-322b-4a26-880c-436c7979645a', N'florinp', N'qwerty123', N'florinp@gmail.com')
+GO
+INSERT [dbo].[AppUsers] ([UserId], [UserName], [PasswordHash], [Email]) VALUES (N'1d71d0b5-5549-47e4-9d36-c76baa24812e', N'abranga', N'qwerty123', N'abranga96@gmail.com')
+GO
+INSERT [dbo].[AppUsers] ([UserId], [UserName], [PasswordHash], [Email]) VALUES (N'1e68bb71-506d-48ed-9bd4-9787293e012d', N'mariapreda', N'qwerty123', N'mariaPreda@gmail.com')
+GO
+INSERT [dbo].[AppUsers] ([UserId], [UserName], [PasswordHash], [Email]) VALUES (N'3ad5a243-93e8-4cef-8104-1417c2811c78', N'ioanapopa', N'qwerty123', N'ioanapopa@gmail.com')
+GO
+INSERT [dbo].[AppUsers] ([UserId], [UserName], [PasswordHash], [Email]) VALUES (N'9fc2cb5f-bee8-44c2-939c-1d4ddd0fc5d6', N'danfulga', N'qwerty123', N'danfulga@gmail.com')
+GO
+INSERT [dbo].[AppUsers] ([UserId], [UserName], [PasswordHash], [Email]) VALUES (N'bbb00794-5465-4fe0-835a-49416657c84f', N'craciunsergiu', N'qwerty123', N'craciunsergiu@gmail.com')
+GO
+INSERT [dbo].[AppUsers] ([UserId], [UserName], [PasswordHash], [Email]) VALUES (N'd8f0b9fe-f591-40b0-bd35-01a45f310538', N'andreipopa', N'qwerty123', N'apopa@gmail.com')
+GO
+SET IDENTITY_INSERT [dbo].[Group] ON 
+GO
+INSERT [dbo].[Group] ([Id], [YearOfStudyId], [GroupName], [Description], [IsActive]) VALUES (4, 1, N'30431', N'Group Number 1', 1)
+GO
+SET IDENTITY_INSERT [dbo].[Group] OFF
+GO
+INSERT [dbo].[StudentEnrollment] ([StudentId], [GroupId]) VALUES (9, 4)
+GO
+INSERT [dbo].[StudentEnrollment] ([StudentId], [GroupId]) VALUES (10, 4)
+GO
+INSERT [dbo].[StudentEnrollment] ([StudentId], [GroupId]) VALUES (11, 4)
+GO
+INSERT [dbo].[StudentEnrollment] ([StudentId], [GroupId]) VALUES (12, 4)
+GO
+INSERT [dbo].[StudentEnrollment] ([StudentId], [GroupId]) VALUES (13, 4)
+GO
+INSERT [dbo].[StudentEnrollment] ([StudentId], [GroupId]) VALUES (14, 4)
+GO
+INSERT [dbo].[StudentGrades] ([StudentId], [SubjectId], [Grade]) VALUES (9, 1, 7,78)
+GO
+INSERT [dbo].[StudentGrades] ([StudentId], [SubjectId], [Grade]) VALUES (9, 2, 10)
+GO
+INSERT [dbo].[StudentGrades] ([StudentId], [SubjectId], [Grade]) VALUES (9, 3, 6)
+GO
+INSERT [dbo].[StudentGrades] ([StudentId], [SubjectId], [Grade]) VALUES (10, 1, 7)
+GO
+INSERT [dbo].[StudentGrades] ([StudentId], [SubjectId], [Grade]) VALUES (10, 2, 7,54)
+GO
+INSERT [dbo].[StudentGrades] ([StudentId], [SubjectId], [Grade]) VALUES (10, 3, 8,92)
+GO
+INSERT [dbo].[StudentGrades] ([StudentId], [SubjectId], [Grade]) VALUES (11, 1, 9,6)
+GO
+INSERT [dbo].[StudentGrades] ([StudentId], [SubjectId], [Grade]) VALUES (11, 2, 10)
+GO
+INSERT [dbo].[StudentGrades] ([StudentId], [SubjectId], [Grade]) VALUES (11, 3, 7,63)
+GO
+SET IDENTITY_INSERT [dbo].[Students] ON 
+GO
+INSERT [dbo].[Students] ([UserId], [StudentId]) VALUES (N'9fc2cb5f-bee8-44c2-939c-1d4ddd0fc5d6', 9)
+GO
+INSERT [dbo].[Students] ([UserId], [StudentId]) VALUES (N'03e55bfa-3831-408c-8923-b0faa9901e6b', 10)
+GO
+INSERT [dbo].[Students] ([UserId], [StudentId]) VALUES (N'3ad5a243-93e8-4cef-8104-1417c2811c78', 11)
+GO
+INSERT [dbo].[Students] ([UserId], [StudentId]) VALUES (N'1e68bb71-506d-48ed-9bd4-9787293e012d', 12)
+GO
+INSERT [dbo].[Students] ([UserId], [StudentId]) VALUES (N'd8f0b9fe-f591-40b0-bd35-01a45f310538', 13)
+GO
+INSERT [dbo].[Students] ([UserId], [StudentId]) VALUES (N'06a8eb50-322b-4a26-880c-436c7979645a', 14)
+GO
+SET IDENTITY_INSERT [dbo].[Students] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Subjects] ON 
+GO
+INSERT [dbo].[Subjects] ([Id], [SubjectName], [Description]) VALUES (1, N'Mathematics', N'-')
+GO
+INSERT [dbo].[Subjects] ([Id], [SubjectName], [Description]) VALUES (2, N'Computer Architecture', N'-')
+GO
+INSERT [dbo].[Subjects] ([Id], [SubjectName], [Description]) VALUES (3, N'Data Structures and algorithms', N'-')
+GO
+SET IDENTITY_INSERT [dbo].[Subjects] OFF
+GO
+INSERT [dbo].[UserProfile] ([UserId], [Name], [Surname], [MidName], [Phone], [Nationality], [Country], [County], [Address], [ZIP]) VALUES (N'03e55bfa-3831-408c-8923-b0faa9901e6b', N'Sergiu', N'Craciun', N'Mihai', N'0789123456', N'Romanian', N'Romania', N'Cluj', N'Baritiu 12', N'400456')
+GO
+INSERT [dbo].[UserProfile] ([UserId], [Name], [Surname], [MidName], [Phone], [Nationality], [Country], [County], [Address], [ZIP]) VALUES (N'06a8eb50-322b-4a26-880c-436c7979645a', N'Florin', N'Popa', N'-', N'0754456345', N'Romanian', N'Romania', N'Ilfov', N'Cantemir 2', N'33221')
+GO
+INSERT [dbo].[UserProfile] ([UserId], [Name], [Surname], [MidName], [Phone], [Nationality], [Country], [County], [Address], [ZIP]) VALUES (N'1d71d0b5-5549-47e4-9d36-c76baa24812e', N'Andrei', N'Branga', N'N', N'0754458404', N'Romanian', N'Romania', N'Cluj', N'Baritiu 12,Cluj', N'40048')
+GO
+INSERT [dbo].[UserProfile] ([UserId], [Name], [Surname], [MidName], [Phone], [Nationality], [Country], [County], [Address], [ZIP]) VALUES (N'1e68bb71-506d-48ed-9bd4-9787293e012d', N'Maria', N'Preda', N'-', N'0264543234', N'Romanian', N'Romania', N'Cluj', N'Dorobantilor 1', N'322123')
+GO
+INSERT [dbo].[UserProfile] ([UserId], [Name], [Surname], [MidName], [Phone], [Nationality], [Country], [County], [Address], [ZIP]) VALUES (N'3ad5a243-93e8-4cef-8104-1417c2811c78', N'Ioana', N'Popa', N'-', N'0976123564', N'Romanian', N'Romania', N'Bucuresti', N'Cosma,23', N'221133')
+GO
+INSERT [dbo].[UserProfile] ([UserId], [Name], [Surname], [MidName], [Phone], [Nationality], [Country], [County], [Address], [ZIP]) VALUES (N'9fc2cb5f-bee8-44c2-939c-1d4ddd0fc5d6', N'Fulga', N'Dan', N'-', N'0754123456', N'Romanian', N'Romania', N'Cluj', N'Baritiu12', N'40048')
+GO
+INSERT [dbo].[UserProfile] ([UserId], [Name], [Surname], [MidName], [Phone], [Nationality], [Country], [County], [Address], [ZIP]) VALUES (N'd8f0b9fe-f591-40b0-bd35-01a45f310538', N'Andrei', N'Popa', N'-', N'0765432123', N'Romanian', N'Romania', N'Sibiu', N'Balcescu, 2', N'223344')
+GO
+SET IDENTITY_INSERT [dbo].[YearOfStudy] ON 
+GO
+INSERT [dbo].[YearOfStudy] ([Id], [YearName], [Description]) VALUES (1, N'Year 1', N'Actually year 1')
+GO
+SET IDENTITY_INSERT [dbo].[YearOfStudy] OFF
+GO
+INSERT [dbo].[YearOfStudySubjects] ([SubjectId], [YearOfStudyId]) VALUES (1, 1)
+GO
+INSERT [dbo].[YearOfStudySubjects] ([SubjectId], [YearOfStudyId]) VALUES (2, 1)
+GO
+INSERT [dbo].[YearOfStudySubjects] ([SubjectId], [YearOfStudyId]) VALUES (3, 1)
+GO
+ALTER TABLE [dbo].[AppUserRoles]  WITH CHECK ADD  CONSTRAINT [FK_AppUserRoles_AppRoles] FOREIGN KEY([RoleId])
+REFERENCES [dbo].[AppRoles] ([RoleId])
+GO
+ALTER TABLE [dbo].[AppUserRoles] CHECK CONSTRAINT [FK_AppUserRoles_AppRoles]
+GO
+ALTER TABLE [dbo].[AppUserRoles]  WITH CHECK ADD  CONSTRAINT [FK_AppUserRoles_AppUsers] FOREIGN KEY([UserId])
+REFERENCES [dbo].[AppUsers] ([UserId])
+GO
+ALTER TABLE [dbo].[AppUserRoles] CHECK CONSTRAINT [FK_AppUserRoles_AppUsers]
+GO
+ALTER TABLE [dbo].[Group]  WITH CHECK ADD  CONSTRAINT [FK_Group_YearOfStudy] FOREIGN KEY([YearOfStudyId])
+REFERENCES [dbo].[YearOfStudy] ([Id])
+GO
+ALTER TABLE [dbo].[Group] CHECK CONSTRAINT [FK_Group_YearOfStudy]
+GO
+ALTER TABLE [dbo].[StudentEnrollment]  WITH CHECK ADD  CONSTRAINT [FK_StudentEnrollment_Group] FOREIGN KEY([GroupId])
+REFERENCES [dbo].[Group] ([Id])
+GO
+ALTER TABLE [dbo].[StudentEnrollment] CHECK CONSTRAINT [FK_StudentEnrollment_Group]
+GO
+ALTER TABLE [dbo].[StudentEnrollment]  WITH CHECK ADD  CONSTRAINT [FK_StudentEnrollment_Students] FOREIGN KEY([StudentId])
+REFERENCES [dbo].[Students] ([StudentId])
+GO
+ALTER TABLE [dbo].[StudentEnrollment] CHECK CONSTRAINT [FK_StudentEnrollment_Students]
+GO
+ALTER TABLE [dbo].[StudentGrades]  WITH CHECK ADD  CONSTRAINT [FK_StudentGrades_Students] FOREIGN KEY([StudentId])
+REFERENCES [dbo].[Students] ([StudentId])
+GO
+ALTER TABLE [dbo].[StudentGrades] CHECK CONSTRAINT [FK_StudentGrades_Students]
+GO
+ALTER TABLE [dbo].[StudentGrades]  WITH CHECK ADD  CONSTRAINT [FK_StudentGrades_Subjects] FOREIGN KEY([SubjectId])
+REFERENCES [dbo].[Subjects] ([Id])
+GO
+ALTER TABLE [dbo].[StudentGrades] CHECK CONSTRAINT [FK_StudentGrades_Subjects]
+GO
+ALTER TABLE [dbo].[Students]  WITH CHECK ADD  CONSTRAINT [FK_Students_AppUsers] FOREIGN KEY([UserId])
+REFERENCES [dbo].[AppUsers] ([UserId])
+GO
+ALTER TABLE [dbo].[Students] CHECK CONSTRAINT [FK_Students_AppUsers]
+GO
+ALTER TABLE [dbo].[UserProfile]  WITH CHECK ADD  CONSTRAINT [FK_UserProfile_AppUsers] FOREIGN KEY([UserId])
+REFERENCES [dbo].[AppUsers] ([UserId])
+GO
+ALTER TABLE [dbo].[UserProfile] CHECK CONSTRAINT [FK_UserProfile_AppUsers]
+GO
+ALTER TABLE [dbo].[YearOfStudySubjects]  WITH CHECK ADD  CONSTRAINT [FK_YearOfStudySubjects_Subjects] FOREIGN KEY([SubjectId])
+REFERENCES [dbo].[Subjects] ([Id])
+GO
+ALTER TABLE [dbo].[YearOfStudySubjects] CHECK CONSTRAINT [FK_YearOfStudySubjects_Subjects]
+GO
+ALTER TABLE [dbo].[YearOfStudySubjects]  WITH CHECK ADD  CONSTRAINT [FK_YearOfStudySubjects_YearOfStudy] FOREIGN KEY([YearOfStudyId])
+REFERENCES [dbo].[YearOfStudy] ([Id])
+GO
+ALTER TABLE [dbo].[YearOfStudySubjects] CHECK CONSTRAINT [FK_YearOfStudySubjects_YearOfStudy]
+GO

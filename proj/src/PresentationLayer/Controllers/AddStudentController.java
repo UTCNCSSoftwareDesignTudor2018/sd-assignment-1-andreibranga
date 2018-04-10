@@ -6,6 +6,7 @@ import BussinessLogicLayer.Models.SubjectsModel;
 import BussinessLogicLayer.Services.AppUserService;
 import BussinessLogicLayer.Services.GradingService;
 import BussinessLogicLayer.Services.StudentService;
+import PresentationLayer.Validators.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -74,27 +75,50 @@ public class AddStudentController
     private int StudentId=0;
     @FXML
     void onNextButton(ActionEvent event) {
+try {
+    NameValidator.validateLetters(nameTxt.getText());
+    NameValidator.validateLetters(surnameTxt.getText());
+    NameValidator.validateLetters(midnameTxt.getText());
+    PhoneValidator.validate(phoneTxt.getText());
+    NameValidator.validateLetters(nationalityTxt.getText());
+    AddressValidator.validateAddress(addressTxt.getText());
+    NameValidator.validateLetters(countryTxt.getText());
+    NameValidator.validateLetters(countyTxt.getText());
+    ZIPValidator.validate(zipTxt.getText());
+    EmailValidator.validate(emailTxt.getText());
+    UserNameValidator.validate(usernameTxt.getText());
+    PasswordValidator.validate(passwordTxt.getText());
 
-        paneOne.setDisable(true);
+    paneOne.setDisable(true);
 
 
-        UserId=AppUserService.AddUser(usernameTxt.getText(),passwordTxt.getText(),emailTxt.getText());
+    UserId = AppUserService.AddUser(usernameTxt.getText(), passwordTxt.getText(), emailTxt.getText());
 
-        AppUserService.AddUserProfile(UserId,nameTxt.getText(),
-                surnameTxt.getText(),
-                midnameTxt.getText(),
-                phoneTxt.getText(),
-                nationalityTxt.getText(),
-                countryTxt.getText(),
-                countyTxt.getText(),
-                addressTxt.getText(),
-                zipTxt.getText());
+    AppUserService.AddUserProfile(UserId, nameTxt.getText(),
+            surnameTxt.getText(),
+            midnameTxt.getText(),
+            phoneTxt.getText(),
+            nationalityTxt.getText(),
+            countryTxt.getText(),
+            countyTxt.getText(),
+            addressTxt.getText(),
+            zipTxt.getText());
 
 
-        StudentId= StudentService.MakeUserStudent(UserId);
+    StudentId = StudentService.MakeUserStudent(UserId);
 
-init();
-        paneTwo.setDisable(false);
+    init();
+    paneTwo.setDisable(false);
+}
+catch (Exception e)
+{
+    Alert alert = new Alert(Alert.AlertType.WARNING);
+    alert.setTitle("Warning");
+    alert.setHeaderText("Form not valid!");
+    alert.setContentText(e.getMessage());
+
+    alert.showAndWait();
+}
     }
 
     @FXML

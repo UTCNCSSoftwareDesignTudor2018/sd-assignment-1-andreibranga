@@ -4,6 +4,7 @@ import BussinessLogicLayer.Models.AppUsersModel;
 import BussinessLogicLayer.Models.StudentsModel;
 import BussinessLogicLayer.Services.AppUserService;
 import BussinessLogicLayer.Services.StudentService;
+import PresentationLayer.Validators.*;
 import javafx.beans.property.IntegerProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -12,14 +13,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+import javax.xml.soap.Name;
 import javax.xml.soap.Text;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -154,32 +153,57 @@ midnameText.setDisable(false);
 
     @FXML
     void onSave(ActionEvent event) {
-        saveButton.setDisable(true);
-        editButton.setDisable(false);
 
 
-        nameText.setDisable(true);
-        surnameText.setDisable(true);
-        phoneText.setDisable(true);
-        nationalityText.setDisable(true);
-        CountyText.setDisable(true);
-        CountryText.setDisable(true);
-        addressText.setDisable(true);
-        zipText.setDisable(true);
-        midnameText.setDisable(true);
+        try{
+            NameValidator.validateLetters(nameText.getText());
+            NameValidator.validateLetters(surnameText.getText());
+            NameValidator.validateLetters(midnameText.getText());
+            PhoneValidator.validate(phoneText.getText());
+            NameValidator.validateLetters(nationalityText.getText());
+            AddressValidator.validateAddress(addressText.getText());
+            NameValidator.validateLetters(CountryText.getText());
+            NameValidator.validateLetters(CountyText.getText());
+            ZIPValidator.validate(zipText.getText());
+            saveButton.setDisable(true);
+            editButton.setDisable(false);
 
-        AppUserService.EditUserProfile(user.getUserId(),
-                nameText.getText(),
-                surnameText.getText(),
-                midnameText.getText(),
-                phoneText.getText(),
-                nationalityText.getText(),
-                CountryText.getText(),
-                CountyText.getText(),
-                addressText.getText(),
-                zipText.getText());
+            nameText.setDisable(true);
+            surnameText.setDisable(true);
+            phoneText.setDisable(true);
+            nationalityText.setDisable(true);
+            CountyText.setDisable(true);
+            CountryText.setDisable(true);
+            addressText.setDisable(true);
+            zipText.setDisable(true);
+            midnameText.setDisable(true);
 
-        init();
+
+
+            AppUserService.EditUserProfile(user.getUserId(),
+                    nameText.getText(),
+                    surnameText.getText(),
+                    midnameText.getText(),
+                    phoneText.getText(),
+                    nationalityText.getText(),
+                    CountryText.getText(),
+                    CountyText.getText(),
+                    addressText.getText(),
+                    zipText.getText());
+
+            init();
+        }
+        catch (Exception e)
+        {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Warning");
+            alert.setHeaderText("Form not valid!");
+            alert.setContentText(e.getMessage());
+
+            alert.showAndWait();
+        }
+
+
 
     }
 
