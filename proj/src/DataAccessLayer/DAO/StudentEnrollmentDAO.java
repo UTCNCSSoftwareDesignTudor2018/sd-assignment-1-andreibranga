@@ -1,6 +1,6 @@
 package DataAccessLayer.DAO;
 
-import BussinessLogicLayer.Models.StudentEnrollmentModel;
+import DataAccessLayer.Models.StudentEnrollmentModel;
 import DataAccessLayer.Connection.ConnectionFactory;
 
 import java.sql.*;

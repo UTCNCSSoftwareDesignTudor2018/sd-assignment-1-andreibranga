@@ -1,13 +1,10 @@
 package PresentationLayer.Controllers;
 
-import BussinessLogicLayer.Models.AppUsersModel;
-import BussinessLogicLayer.Models.StudentsModel;
+import DataAccessLayer.Models.AppUsersModel;
+import DataAccessLayer.Models.StudentsModel;
 import BussinessLogicLayer.Services.AppUserService;
 import BussinessLogicLayer.Services.StudentService;
 import PresentationLayer.Validators.*;
-import javafx.beans.property.IntegerProperty;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -18,11 +15,8 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-import javax.xml.soap.Name;
-import javax.xml.soap.Text;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Optional;
 
 public class MainController {
     @FXML

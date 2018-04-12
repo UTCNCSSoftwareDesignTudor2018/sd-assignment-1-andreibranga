@@ -1,6 +1,6 @@
 package DataAccessLayer.DAO;
 
-import BussinessLogicLayer.Models.YearOfStudySubjectsModel;
+import DataAccessLayer.Models.YearOfStudySubjectsModel;
 import DataAccessLayer.Connection.ConnectionFactory;
 
 import java.sql.*;

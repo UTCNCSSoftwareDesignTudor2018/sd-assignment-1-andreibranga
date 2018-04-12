@@ -1,11 +1,8 @@
 package BussinessLogicLayer.Services;
 
-import BussinessLogicLayer.Models.AppRolesModel;
-import BussinessLogicLayer.Models.AppUserRolesModel;
-import BussinessLogicLayer.Models.AppUsersModel;
-import BussinessLogicLayer.Models.StudentsModel;
+import DataAccessLayer.Models.AppUserRolesModel;
+import DataAccessLayer.Models.AppUsersModel;
 import DataAccessLayer.DAO.*;
-import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
 
 import java.util.ArrayList;
 import java.util.Optional;

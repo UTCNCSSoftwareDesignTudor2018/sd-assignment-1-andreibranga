@@ -1,8 +1,7 @@
 package DataAccessLayer.DAO;
 
-import BussinessLogicLayer.Models.StudentsModel;
+import DataAccessLayer.Models.StudentsModel;
 import DataAccessLayer.Connection.ConnectionFactory;
-import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 
 import java.sql.*;

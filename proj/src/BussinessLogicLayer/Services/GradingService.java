@@ -1,9 +1,7 @@
 package BussinessLogicLayer.Services;
 
-import BussinessLogicLayer.Models.StudentGradesModel;
+import DataAccessLayer.Models.StudentGradesModel;
 import DataAccessLayer.DAO.StudentGradesDAO;
-
-import java.util.Optional;
 
 public class GradingService
 {

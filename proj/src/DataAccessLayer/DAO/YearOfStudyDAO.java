@@ -1,8 +1,7 @@
 package DataAccessLayer.DAO;
 
-import BussinessLogicLayer.Models.YearOfStudyModel;
+import DataAccessLayer.Models.YearOfStudyModel;
 import DataAccessLayer.Connection.ConnectionFactory;
-import com.sun.org.apache.xerces.internal.impl.dv.xs.YearMonthDV;
 
 import java.sql.*;
 import java.util.ArrayList;

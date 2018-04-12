@@ -1,9 +1,9 @@
 package Testing;
 
-import BussinessLogicLayer.Models.AppRolesModel;
-import BussinessLogicLayer.Models.AppUserRolesModel;
-import BussinessLogicLayer.Models.AppUsersModel;
-import BussinessLogicLayer.Models.StudentsModel;
+import DataAccessLayer.Models.AppRolesModel;
+import DataAccessLayer.Models.AppUserRolesModel;
+import DataAccessLayer.Models.AppUsersModel;
+import DataAccessLayer.Models.StudentsModel;
 import BussinessLogicLayer.Services.StudentService;
 import DataAccessLayer.Connection.ConnectionFactory;
 import DataAccessLayer.DAO.AppRolesDAO;

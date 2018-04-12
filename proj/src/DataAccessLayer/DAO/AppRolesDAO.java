@@ -1,6 +1,6 @@
 package DataAccessLayer.DAO;
 
-import BussinessLogicLayer.Models.AppRolesModel;
+import DataAccessLayer.Models.AppRolesModel;
 import DataAccessLayer.Connection.ConnectionFactory;
 
 import java.sql.*;

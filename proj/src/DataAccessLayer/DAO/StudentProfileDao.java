@@ -1,7 +1,6 @@
 package DataAccessLayer.DAO;
 
-import BussinessLogicLayer.Models.AppUsersModel;
-import BussinessLogicLayer.Models.StudentProfileModel;
+import DataAccessLayer.Models.StudentProfileModel;
 import DataAccessLayer.Connection.ConnectionFactory;
 
 import java.sql.*;

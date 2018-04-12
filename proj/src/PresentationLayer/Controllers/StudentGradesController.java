@@ -1,8 +1,8 @@
 package PresentationLayer.Controllers;
 
-import BussinessLogicLayer.Models.AppUsersModel;
-import BussinessLogicLayer.Models.StudentsModel;
-import BussinessLogicLayer.Models.SubjectsModel;
+import DataAccessLayer.Models.AppUsersModel;
+import DataAccessLayer.Models.StudentsModel;
+import DataAccessLayer.Models.SubjectsModel;
 import BussinessLogicLayer.Services.GradingService;
 import BussinessLogicLayer.Services.StudentService;
 import javafx.fxml.FXML;

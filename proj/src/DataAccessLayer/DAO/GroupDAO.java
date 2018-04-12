@@ -1,9 +1,7 @@
 package DataAccessLayer.DAO;
 
-import BussinessLogicLayer.Models.AppUsersModel;
-import BussinessLogicLayer.Models.GroupModel;
+import DataAccessLayer.Models.GroupModel;
 import DataAccessLayer.Connection.ConnectionFactory;
-import javassist.runtime.Desc;
 
 import java.sql.*;
 import java.util.ArrayList;

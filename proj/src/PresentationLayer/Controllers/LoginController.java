@@ -1,6 +1,6 @@
 package PresentationLayer.Controllers;
 
-import BussinessLogicLayer.Models.AppUsersModel;
+import DataAccessLayer.Models.AppUsersModel;
 import BussinessLogicLayer.Services.AppUserService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -14,8 +14,6 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class LoginController {
 

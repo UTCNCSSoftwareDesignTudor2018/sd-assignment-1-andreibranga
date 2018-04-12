@@ -1,10 +1,7 @@
 package PresentationLayer.Controllers;
 
-import BussinessLogicLayer.Models.AppUsersModel;
-import BussinessLogicLayer.Models.GroupModel;
-import BussinessLogicLayer.Models.SubjectsModel;
+import DataAccessLayer.Models.GroupModel;
 import BussinessLogicLayer.Services.AppUserService;
-import BussinessLogicLayer.Services.GradingService;
 import BussinessLogicLayer.Services.StudentService;
 import PresentationLayer.Validators.*;
 import javafx.event.ActionEvent;

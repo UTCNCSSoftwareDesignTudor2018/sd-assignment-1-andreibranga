@@ -1,9 +1,9 @@
 package PresentationLayer.Controllers;
 
-import BussinessLogicLayer.Models.AppReportModel;
-import BussinessLogicLayer.Models.AppUsersModel;
-import BussinessLogicLayer.Models.StudentsModel;
-import BussinessLogicLayer.Models.SubjectsModel;
+import DataAccessLayer.Models.AppReportModel;
+import DataAccessLayer.Models.AppUsersModel;
+import DataAccessLayer.Models.StudentsModel;
+import DataAccessLayer.Models.SubjectsModel;
 import BussinessLogicLayer.Services.AppUserService;
 import BussinessLogicLayer.Services.GradingService;
 import BussinessLogicLayer.Services.StudentService;
@@ -14,7 +14,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 
 import java.io.FileNotFoundException;
@@ -22,7 +21,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
-import java.util.Map;
 
 public class StudentDetailController
 {
