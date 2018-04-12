@@ -1,0 +1,15 @@
+Student Report
+Name=Andrei Mihai Branga
+Surname=Branga
+MidName=Mihai
+StudentId=10
+Group=30431
+Year=Year 1
+
+
+Grades: 
+
+Subject: Mathematics    Grade: 7.0
+Subject: Computer Architecture    Grade: 7.54
+Subject: Data Structures and algorithms    Grade: 8.92
+
